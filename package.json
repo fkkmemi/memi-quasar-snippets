@@ -1,5 +1,5 @@
 {
-  "name": "memi-quasar-snippets",
+	"name": "memi-quasar-snippets",
 	"displayName": "memi-quasar-snippets",
 	"description": "memi's quasar snippets",
 	"version": "0.0.1",
@@ -17,29 +17,33 @@
 			},
 			{
 				"language": "html",
-				"path": "./snippets/quasar-eg.json"
+				"path": "./snippets/quasar-default.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/quasar-example.json"
 			}
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "yarn run compile && yarn run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
+		"lint": "eslint .",
+		"pretest": "yarn run lint",
+		"test": "node ./test/runTest.js",
+		"generate": "node ./generate"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.60.0",
 		"@types/glob": "^7.1.4",
 		"@types/mocha": "^9.0.0",
 		"@types/node": "14.x",
-		"@typescript-eslint/eslint-plugin": "^4.31.1",
-		"@typescript-eslint/parser": "^4.31.1",
+		"@types/vscode": "^1.60.0",
+		"@vscode/test-electron": "^1.6.2",
 		"eslint": "^7.32.0",
 		"glob": "^7.1.7",
 		"mocha": "^9.1.1",
-		"typescript": "^4.4.3",
-		"@vscode/test-electron": "^1.6.2"
+		"typescript": "^4.4.3"
+	},
+	"dependencies": {
+		"kebab-case": "^1.0.1",
+		"quasar": "^2.1.0"
 	}
 }

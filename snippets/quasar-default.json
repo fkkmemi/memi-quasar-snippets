@@ -1,0 +1,2527 @@
+{
+  "QAjaxBar": {
+    "prefix": "qajaxbar-default",
+    "body": [
+      "<q-ajax-bar",
+      "\tposition=\"top\"",
+      "\tsize=\"2px\"",
+      "\tcolor=\"\"",
+      "\t:skip-hijack=\"false\"",
+      "\t:reverse=\"false\"",
+      "\t@start=\"null\"",
+      "\t@stop=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QAvatar": {
+    "prefix": "qavatar-default",
+    "body": [
+      "<q-avatar",
+      "\tfont-size=\"\"",
+      "\tcolor=\"\"",
+      "\ttext-color=\"\"",
+      "\ticon=\"\"",
+      "\t:square=\"false\"",
+      "\t:rounded=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-avatar>"
+    ],
+    "description": ""
+  },
+  "QBadge": {
+    "prefix": "qbadge-default",
+    "body": [
+      "<q-badge",
+      "\tcolor=\"\"",
+      "\ttext-color=\"\"",
+      "\t:floating=\"false\"",
+      "\t:transparent=\"false\"",
+      "\t:multi-line=\"false\"",
+      "\tlabel=\"\"",
+      "\talign=\"\"",
+      "\t:outline=\"false\"",
+      "\t:rounded=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-badge>"
+    ],
+    "description": ""
+  },
+  "QBanner": {
+    "prefix": "qbanner-default",
+    "body": [
+      "<q-banner",
+      "\t:inline-actions=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:rounded=\"false\"",
+      "\t:dark=\"false\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #avatar>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #action>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-banner>"
+    ],
+    "description": ""
+  },
+  "QBar": {
+    "prefix": "qbar-default",
+    "body": [
+      "<q-bar",
+      "\t:dense=\"false\"",
+      "\t:dark=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-bar>"
+    ],
+    "description": ""
+  },
+  "QBreadcrumbs": {
+    "prefix": "qbreadcrumbs-default",
+    "body": [
+      "<q-breadcrumbs",
+      "\tseparator=\"/\"",
+      "\tactive-color=\"primary\"",
+      "\tgutter=\"sm\"",
+      "\tseparator-color=\"\"",
+      "\talign=\"left\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #separator>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-breadcrumbs>"
+    ],
+    "description": ""
+  },
+  "QBreadcrumbsEl": {
+    "prefix": "qbreadcrumbsel-default",
+    "body": [
+      "<q-breadcrumbs-el",
+      "\tlabel=\"\"",
+      "\ticon=\"\"",
+      "\ttag=\"span\"",
+      "\t:ripple=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-breadcrumbs-el>"
+    ],
+    "description": ""
+  },
+  "QBtn": {
+    "prefix": "qbtn-default",
+    "body": [
+      "<q-btn",
+      "\t:round=\"false\"",
+      "\t:percentage=\"0\"",
+      "\t:dark-percentage=\"false\"",
+      "\ttype=\"button\"",
+      "\tto=\"\"",
+      "\t:replace=\"false\"",
+      "\t:append=\"false\"",
+      "\tlabel=\"\"",
+      "\ticon=\"\"",
+      "\ticon-right=\"\"",
+      "\t:outline=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:unelevated=\"false\"",
+      "\t:rounded=\"false\"",
+      "\t:push=\"false\"",
+      "\t:glossy=\"false\"",
+      "\t:fab=\"false\"",
+      "\t:fab-mini=\"false\"",
+      "\tpadding=\"\"",
+      "\tcolor=\"\"",
+      "\ttext-color=\"\"",
+      "\t:no-caps=\"false\"",
+      "\t:no-wrap=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:ripple=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\talign=\"center\"",
+      "\t:stack=\"false\"",
+      "\t:stretch=\"false\"",
+      "\t:loading=\"false\"",
+      "\t:disable=\"false\"",
+      "\t@click=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #loading>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-btn>"
+    ],
+    "description": ""
+  },
+  "QBtnDropdown": {
+    "prefix": "qbtndropdown-default",
+    "body": [
+      "<q-btn-dropdown",
+      "\t:model-value=\"false\"",
+      "\t:split=\"false\"",
+      "\tdropdown-icon=\"\"",
+      "\t:disable-main-btn=\"false\"",
+      "\t:disable-dropdown=\"false\"",
+      "\t:no-icon-animation=\"false\"",
+      "\tcontent-style=\"\"",
+      "\tcontent-class=\"\"",
+      "\t:cover=\"false\"",
+      "\t:persistent=\"false\"",
+      "\t:no-route-dismiss=\"false\"",
+      "\t:auto-close=\"false\"",
+      "\tmenu-anchor=\"bottom end\"",
+      "\tmenu-self=\"top end\"",
+      "\t:menu-offset=\"[]\"",
+      "\t@click=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #label>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-btn-dropdown>"
+    ],
+    "description": ""
+  },
+  "QBtnGroup": {
+    "prefix": "qbtngroup-default",
+    "body": [
+      "<q-btn-group",
+      "\t:spread=\"false\"",
+      "\t:outline=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:unelevated=\"false\"",
+      "\t:rounded=\"false\"",
+      "\t:push=\"false\"",
+      "\t:stretch=\"false\"",
+      "\t:glossy=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-btn-group>"
+    ],
+    "description": ""
+  },
+  "QBtnToggle": {
+    "prefix": "qbtntoggle-default",
+    "body": [
+      "<q-btn-toggle",
+      "\t:model-value=\"null\"",
+      "\t:options=\"[]\"",
+      "\tcolor=\"\"",
+      "\ttext-color=\"\"",
+      "\ttoggle-color=\"primary\"",
+      "\ttoggle-text-color=\"\"",
+      "\t:spread=\"false\"",
+      "\t:outline=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:unelevated=\"false\"",
+      "\t:rounded=\"false\"",
+      "\t:push=\"false\"",
+      "\t:glossy=\"false\"",
+      "\tsize=\"\"",
+      "\tpadding=\"\"",
+      "\t:no-caps=\"false\"",
+      "\t:no-wrap=\"false\"",
+      "\t:ripple=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:readonly=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:stack=\"false\"",
+      "\t:stretch=\"false\"",
+      "\t:clearable=\"false\"",
+      "\t@update:model-value=\"null\"",
+      "\t@clear=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-btn-toggle>"
+    ],
+    "description": ""
+  },
+  "QCard": {
+    "prefix": "qcard-default",
+    "body": [
+      "<q-card",
+      "\t:dark=\"false\"",
+      "\t:square=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:bordered=\"false\"",
+      "\ttag=\"div\"",
+      ">",
+      "\t${1:content}",
+      "</q-card>"
+    ],
+    "description": ""
+  },
+  "QCardActions": {
+    "prefix": "qcardactions-default",
+    "body": [
+      "<q-card-actions",
+      "\talign=\"left (for horizontal mode) / stretch (for vertical mode)\"",
+      "\t:vertical=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-card-actions>"
+    ],
+    "description": ""
+  },
+  "QCardSection": {
+    "prefix": "qcardsection-default",
+    "body": [
+      "<q-card-section",
+      "\t:horizontal=\"false\"",
+      "\ttag=\"div\"",
+      ">",
+      "\t${1:content}",
+      "</q-card-section>"
+    ],
+    "description": ""
+  },
+  "QCarousel": {
+    "prefix": "qcarousel-default",
+    "body": [
+      "<q-carousel",
+      "\t:dark=\"false\"",
+      "\theight=\"\"",
+      "\t:padding=\"false\"",
+      "\tcontrol-color=\"\"",
+      "\tcontrol-text-color=\"\"",
+      "\tcontrol-type=\"\"",
+      "\t:autoplay=\"null\"",
+      "\t:arrows=\"false\"",
+      "\tprev-icon=\"\"",
+      "\tnext-icon=\"\"",
+      "\t:navigation=\"false\"",
+      "\tnavigation-position=\"bottom/right\"",
+      "\tnavigation-icon=\"\"",
+      "\tnavigation-active-icon=\"\"",
+      "\t:thumbnails=\"false\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #control>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #navigation-icon>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-carousel>"
+    ],
+    "description": ""
+  },
+  "QCarouselControl": {
+    "prefix": "qcarouselcontrol-default",
+    "body": [
+      "<q-carousel-control",
+      "\tposition=\"bottom-right\"",
+      "\t:offset=\"[]\"",
+      ">",
+      "\t${1:content}",
+      "</q-carousel-control>"
+    ],
+    "description": ""
+  },
+  "QCarouselSlide": {
+    "prefix": "qcarouselslide-default",
+    "body": [
+      "<q-carousel-slide",
+      "\t:name=\"null\"",
+      "\timg-src=\"\"",
+      ">",
+      "\t${1:content}",
+      "</q-carousel-slide>"
+    ],
+    "description": ""
+  },
+  "QChatMessage": {
+    "prefix": "qchatmessage-default",
+    "body": [
+      "<q-chat-message",
+      "\t:sent=\"false\"",
+      "\tlabel=\"\"",
+      "\t:bg-color=\"null\"",
+      "\ttext-color=\"\"",
+      "\tname=\"\"",
+      "\tavatar=\"\"",
+      "\t:text=\"[]\"",
+      "\tstamp=\"\"",
+      "\tsize=\"\"",
+      "\t:label-html=\"null\"",
+      "\t:name-html=\"null\"",
+      "\t:text-html=\"null\"",
+      "\t:stamp-html=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #avatar>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #name>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #stamp>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #label>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-chat-message>"
+    ],
+    "description": ""
+  },
+  "QCheckbox": {
+    "prefix": "qcheckbox-default",
+    "body": [
+      "<q-checkbox",
+      "\t:model-value=\"null\"",
+      "\t:val=\"null\"",
+      "\t:true-value=\"null\"",
+      "\t:false-value=\"null\"",
+      "\t:indeterminate-value=\"null\"",
+      "\ttoggle-order=\"tf\"",
+      "\t:toggle-indeterminate=\"false\"",
+      "\tlabel=\"\"",
+      "\t:left-label=\"false\"",
+      "\tcolor=\"\"",
+      "\t:keep-color=\"false\"",
+      "\t:dark=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\t@update:model-value=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-checkbox>"
+    ],
+    "description": ""
+  },
+  "QChip": {
+    "prefix": "qchip-default",
+    "body": [
+      "<q-chip",
+      "\t:dense=\"false\"",
+      "\tsize=\"\"",
+      "\t:dark=\"false\"",
+      "\ticon=\"\"",
+      "\ticon-right=\"\"",
+      "\ticon-remove=\"\"",
+      "\ticon-selected=\"\"",
+      "\tlabel=\"\"",
+      "\tcolor=\"\"",
+      "\ttext-color=\"\"",
+      "\t:model-value=\"false\"",
+      "\t:selected=\"false\"",
+      "\t:square=\"false\"",
+      "\t:outline=\"false\"",
+      "\t:clickable=\"false\"",
+      "\t:removable=\"false\"",
+      "\t:ripple=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\t:disable=\"false\"",
+      "\t@click=\"null\"",
+      "\t@update:selected=\"null\"",
+      "\t@remove=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-chip>"
+    ],
+    "description": ""
+  },
+  "QCircularProgress": {
+    "prefix": "qcircularprogress-default",
+    "body": [
+      "<q-circular-progress",
+      "\t:value=\"0\"",
+      "\t:min=\"0\"",
+      "\t:max=\"0\"",
+      "\tcolor=\"\"",
+      "\tcenter-color=\"\"",
+      "\ttrack-color=\"\"",
+      "\tfont-size=\"0.25em\"",
+      "\t:thickness=\"0\"",
+      "\t:angle=\"0\"",
+      "\t:indeterminate=\"false\"",
+      "\t:show-value=\"false\"",
+      "\t:reverse=\"false\"",
+      "\t:instant-feedback=\"false\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #internal>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-circular-progress>"
+    ],
+    "description": ""
+  },
+  "QColor": {
+    "prefix": "qcolor-default",
+    "body": [
+      "<q-color",
+      "\tmodel-value=\"\"",
+      "\tdefault-value=\"\"",
+      "\tdefault-view=\"spectrum\"",
+      "\tformat-model=\"auto\"",
+      "\t:palette=\"[]\"",
+      "\t:square=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:bordered=\"false\"",
+      "\t:no-header=\"false\"",
+      "\t:no-footer=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:readonly=\"false\"",
+      "\t:dark=\"false\"",
+      "\t@update:model-value=\"null\"",
+      "\t@change=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QDate": {
+    "prefix": "qdate-default",
+    "body": [
+      "<q-date",
+      "\t:model-value=\"null\"",
+      "\ttitle=\"\"",
+      "\tsubtitle=\"\"",
+      "\tdefault-year-month=\"\"",
+      "\tmask=\"\"",
+      "\tdefault-view=\"Calendar\"",
+      "\t:years-in-month-view=\"false\"",
+      "\t:events=\"null\"",
+      "\tevent-color=\"\"",
+      "\t:options=\"null\"",
+      "\tnavigation-min-year-month=\"\"",
+      "\tnavigation-max-year-month=\"\"",
+      "\t:no-unset=\"false\"",
+      "\tfirst-day-of-week=\"\"",
+      "\t:today-btn=\"false\"",
+      "\t:minimal=\"false\"",
+      "\t:multiple=\"false\"",
+      "\t:range=\"false\"",
+      "\t:emit-immediately=\"false\"",
+      "\t:landscape=\"false\"",
+      "\t:locale=\"null\"",
+      "\tcalendar=\"gregorian\"",
+      "\tcolor=\"\"",
+      "\ttext-color=\"\"",
+      "\t:dark=\"false\"",
+      "\t:square=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:bordered=\"false\"",
+      "\t:readonly=\"false\"",
+      "\t:disable=\"false\"",
+      "\t@update:model-value=\"null\"",
+      "\t@navigation=\"null\"",
+      "\t@range-start=\"null\"",
+      "\t@range-end=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-date>"
+    ],
+    "description": ""
+  },
+  "QDialog": {
+    "prefix": "qdialog-default",
+    "body": [
+      "<q-dialog",
+      "\t:persistent=\"false\"",
+      "\t:no-esc-dismiss=\"false\"",
+      "\t:no-backdrop-dismiss=\"false\"",
+      "\t:no-route-dismiss=\"false\"",
+      "\t:auto-close=\"false\"",
+      "\t:seamless=\"false\"",
+      "\t:maximized=\"false\"",
+      "\t:full-width=\"false\"",
+      "\t:full-height=\"false\"",
+      "\tposition=\"standard\"",
+      "\ttransition-show=\"scale\"",
+      "\ttransition-hide=\"scale\"",
+      "\t:square=\"false\"",
+      "\t:no-refocus=\"false\"",
+      "\t:no-focus=\"false\"",
+      "\t@shake=\"null\"",
+      "\t@escape-key=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-dialog>"
+    ],
+    "description": ""
+  },
+  "QDrawer": {
+    "prefix": "qdrawer-default",
+    "body": [
+      "<q-drawer",
+      "\tside=\"left\"",
+      "\t:overlay=\"false\"",
+      "\t:width=\"0\"",
+      "\t:mini=\"false\"",
+      "\t:mini-width=\"0\"",
+      "\t:dark=\"false\"",
+      "\t:mini-to-overlay=\"false\"",
+      "\t:breakpoint=\"0\"",
+      "\tbehavior=\"default\"",
+      "\t:bordered=\"false\"",
+      "\t:elevated=\"false\"",
+      "\t:persistent=\"false\"",
+      "\t:show-if-above=\"false\"",
+      "\t:no-swipe-open=\"false\"",
+      "\t:no-swipe-close=\"false\"",
+      "\t:no-swipe-backdrop=\"false\"",
+      "\t@on-layout=\"null\"",
+      "\t@click=\"null\"",
+      "\t@mouseover=\"null\"",
+      "\t@mouseout=\"null\"",
+      "\t@mini-state=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #mini>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-drawer>"
+    ],
+    "description": ""
+  },
+  "QEditor": {
+    "prefix": "qeditor-default",
+    "body": [
+      "<q-editor",
+      "\tmodel-value=\"\"",
+      "\t:readonly=\"false\"",
+      "\t:square=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:dark=\"false\"",
+      "\t:disable=\"false\"",
+      "\tmin-height=\"10rem\"",
+      "\tmax-height=\"\"",
+      "\theight=\"\"",
+      "\t:definitions=\"null\"",
+      "\t:fonts=\"null\"",
+      "\t:toolbar=\"[]\"",
+      "\t:toolbar-color=\"null\"",
+      "\t:toolbar-text-color=\"null\"",
+      "\ttoolbar-toggle-color=\"primary\"",
+      "\ttoolbar-bg=\"grey-3\"",
+      "\t:toolbar-outline=\"false\"",
+      "\t:toolbar-push=\"false\"",
+      "\t:toolbar-rounded=\"false\"",
+      "\tparagraph-tag=\"\"",
+      "\t:content-style=\"null\"",
+      "\tcontent-class=\"\"",
+      "\tplaceholder=\"\"",
+      "\t@update:model-value=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QExpansionItem": {
+    "prefix": "qexpansionitem-default",
+    "body": [
+      "<q-expansion-item",
+      "\t:model-value=\"null\"",
+      "\ticon=\"\"",
+      "\t:expand-icon=\"null\"",
+      "\t:expanded-icon=\"null\"",
+      "\texpand-icon-class=\"\"",
+      "\tlabel=\"\"",
+      "\tlabel-lines=\"\"",
+      "\tcaption=\"\"",
+      "\tcaption-lines=\"\"",
+      "\t:dark=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:duration=\"0\"",
+      "\t:header-inset-level=\"0\"",
+      "\t:content-inset-level=\"0\"",
+      "\t:expand-separator=\"false\"",
+      "\t:default-opened=\"false\"",
+      "\t:expand-icon-toggle=\"false\"",
+      "\t:switch-toggle-side=\"false\"",
+      "\t:dense-toggle=\"false\"",
+      "\tgroup=\"\"",
+      "\t:popup=\"false\"",
+      "\theader-style=\"\"",
+      "\theader-class=\"\"",
+      "\t@after-show=\"null\"",
+      "\t@after-hide=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #header>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-expansion-item>"
+    ],
+    "description": ""
+  },
+  "QFab": {
+    "prefix": "qfab-default",
+    "body": [
+      "<q-fab",
+      "\t:model-value=\"null\"",
+      "\ticon=\"\"",
+      "\t:active-icon=\"null\"",
+      "\t:hide-icon=\"false\"",
+      "\tdirection=\"right\"",
+      "\tvertical-actions-align=\"center\"",
+      "\t:persistent=\"false\"",
+      "\ttype=\"a\"",
+      "\t:outline=\"false\"",
+      "\t:push=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:unelevated=\"false\"",
+      "\tpadding=\"\"",
+      "\tcolor=\"\"",
+      "\ttext-color=\"\"",
+      "\t:glossy=\"false\"",
+      "\t:external-label=\"false\"",
+      "\tlabel=\"\"",
+      "\tlabel-position=\"\"",
+      "\t:hide-label=\"false\"",
+      "\tlabel-class=\"\"",
+      "\tlabel-style=\"\"",
+      "\t:square=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\t@update:model-value=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #tooltip>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-fab>"
+    ],
+    "description": ""
+  },
+  "QFabAction": {
+    "prefix": "qfabaction-default",
+    "body": [
+      "<q-fab-action",
+      "\ticon=\"\"",
+      "\tanchor=\"\"",
+      "\tto=\"\"",
+      "\t:replace=\"false\"",
+      "\t@click=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-fab-action>"
+    ],
+    "description": ""
+  },
+  "QField": {
+    "prefix": "qfield-default",
+    "body": [
+      "<q-field",
+      "\tmaxlength=\"\"",
+      "\tmax-values=\"\"",
+      "\t@update:model-value=\"null\"",
+      "\t@focus=\"null\"",
+      "\t@blur=\"null\"",
+      ">",
+      "\t<template #control>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #rawControl>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-field>"
+    ],
+    "description": ""
+  },
+  "QFile": {
+    "prefix": "qfile-default",
+    "body": [
+      "<q-file",
+      "\t:model-value=\"null\"",
+      "\t:append=\"false\"",
+      "\tdisplay-value=\"\"",
+      "\t:use-chips=\"false\"",
+      "\t:counter-label=\"null\"",
+      "\t:tabindex=\"0\"",
+      "\tinput-class=\"\"",
+      "\tinput-style=\"\"",
+      "\t@update:model-value=\"null\"",
+      ">",
+      "\t<template #file>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #selected>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-file>"
+    ],
+    "description": ""
+  },
+  "QFooter": {
+    "prefix": "qfooter-default",
+    "body": [
+      "<q-footer",
+      "\t:model-value=\"false\"",
+      "\t:reveal=\"false\"",
+      "\t:bordered=\"false\"",
+      "\t:elevated=\"false\"",
+      "\t:height-hint=\"null\"",
+      "\t@reveal=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-footer>"
+    ],
+    "description": ""
+  },
+  "QForm": {
+    "prefix": "qform-default",
+    "body": [
+      "<q-form",
+      "\t:autofocus=\"false\"",
+      "\t:no-error-focus=\"false\"",
+      "\t:no-reset-focus=\"false\"",
+      "\t:greedy=\"false\"",
+      "\t@submit=\"null\"",
+      "\t@reset=\"null\"",
+      "\t@validation-success=\"null\"",
+      "\t@validation-error=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-form>"
+    ],
+    "description": ""
+  },
+  "QFormChildMixin": {
+    "prefix": "qformchildmixin-default",
+    "body": [
+      "<q-form-child-mixin",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QHeader": {
+    "prefix": "qheader-default",
+    "body": [
+      "<q-header",
+      "\t:model-value=\"false\"",
+      "\t:reveal=\"false\"",
+      "\t:reveal-offset=\"0\"",
+      "\t:bordered=\"false\"",
+      "\t:elevated=\"false\"",
+      "\t:height-hint=\"null\"",
+      "\t@reveal=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-header>"
+    ],
+    "description": ""
+  },
+  "QIcon": {
+    "prefix": "qicon-default",
+    "body": [
+      "<q-icon",
+      "\ttag=\"i\"",
+      "\tname=\"\"",
+      "\tcolor=\"\"",
+      "\t:left=\"false\"",
+      "\t:right=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-icon>"
+    ],
+    "description": ""
+  },
+  "QImg": {
+    "prefix": "qimg-default",
+    "body": [
+      "<q-img",
+      "\tsrc=\"\"",
+      "\tsrcset=\"\"",
+      "\tsizes=\"\"",
+      "\tplaceholder-src=\"\"",
+      "\tratio=\"\"",
+      "\tinitial-ratio=\"\"",
+      "\twidth=\"\"",
+      "\theight=\"\"",
+      "\tloading=\"lazy\"",
+      "\tcrossorigin=\"\"",
+      "\tfit=\"cover\"",
+      "\tposition=\"50% 50%\"",
+      "\talt=\"\"",
+      "\t:draggable=\"false\"",
+      "\timg-class=\"\"",
+      "\t:img-style=\"null\"",
+      "\t:spinner-color=\"null\"",
+      "\t:spinner-size=\"null\"",
+      "\t:no-spinner=\"false\"",
+      "\t:no-native-menu=\"false\"",
+      "\t:no-transition=\"false\"",
+      "\t@load=\"null\"",
+      "\t@error=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #loading>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #error>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-img>"
+    ],
+    "description": ""
+  },
+  "QInfiniteScroll": {
+    "prefix": "qinfinitescroll-default",
+    "body": [
+      "<q-infinite-scroll",
+      "\t:offset=\"0\"",
+      "\tdebounce=\"\"",
+      "\t:initial-index=\"0\"",
+      "\t:scroll-target=\"null\"",
+      "\t:disable=\"false\"",
+      "\t:reverse=\"false\"",
+      "\t@load=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #loading>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-infinite-scroll>"
+    ],
+    "description": ""
+  },
+  "QInnerLoading": {
+    "prefix": "qinnerloading-default",
+    "body": [
+      "<q-inner-loading",
+      "\t:showing=\"false\"",
+      "\tcolor=\"\"",
+      "\t:size=\"null\"",
+      "\t:dark=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-inner-loading>"
+    ],
+    "description": ""
+  },
+  "QInput": {
+    "prefix": "qinput-default",
+    "body": [
+      "<q-input",
+      "\t:model-value=\"null\"",
+      "\tshadow-text=\"\"",
+      "\ttype=\"text\"",
+      "\tdebounce=\"\"",
+      "\tmaxlength=\"\"",
+      "\t:autogrow=\"false\"",
+      "\tinput-class=\"\"",
+      "\tinput-style=\"\"",
+      "\t@update:model-value=\"null\"",
+      "\t@focus=\"null\"",
+      "\t@blur=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "use-mask": {
+    "prefix": "use-mask-default",
+    "body": [
+      "<se-mask",
+      "\tmask=\"\"",
+      "\tfill-mask=\"\"",
+      "\t:reverse-fill-mask=\"false\"",
+      "\t:unmasked-value=\"false\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QIntersection": {
+    "prefix": "qintersection-default",
+    "body": [
+      "<q-intersection",
+      "\ttag=\"div\"",
+      "\t:once=\"false\"",
+      "\t:ssr-prerender=\"false\"",
+      "\t:root=\"null\"",
+      "\tmargin=\"\"",
+      "\t:threshold=\"null\"",
+      "\t:transition=\"null\"",
+      "\t:disable=\"false\"",
+      "\t@visibility=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-intersection>"
+    ],
+    "description": ""
+  },
+  "QItem": {
+    "prefix": "qitem-default",
+    "body": [
+      "<q-item",
+      "\t:active=\"false\"",
+      "\t:dark=\"false\"",
+      "\t:clickable=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:inset-level=\"0\"",
+      "\t:tabindex=\"0\"",
+      "\ttag=\"div\"",
+      "\t:manual-focus=\"false\"",
+      "\t:focused=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-item>"
+    ],
+    "description": ""
+  },
+  "QItemLabel": {
+    "prefix": "qitemlabel-default",
+    "body": [
+      "<q-item-label",
+      "\t:overline=\"false\"",
+      "\t:caption=\"false\"",
+      "\t:header=\"false\"",
+      "\tlines=\"\"",
+      ">",
+      "\t${1:content}",
+      "</q-item-label>"
+    ],
+    "description": ""
+  },
+  "QItemSection": {
+    "prefix": "qitemsection-default",
+    "body": [
+      "<q-item-section",
+      "\t:avatar=\"false\"",
+      "\t:thumbnail=\"false\"",
+      "\t:side=\"false\"",
+      "\t:top=\"false\"",
+      "\t:no-wrap=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-item-section>"
+    ],
+    "description": ""
+  },
+  "QList": {
+    "prefix": "qlist-default",
+    "body": [
+      "<q-list",
+      "\t:bordered=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:separator=\"false\"",
+      "\t:dark=\"false\"",
+      "\t:padding=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-list>"
+    ],
+    "description": ""
+  },
+  "QKnob": {
+    "prefix": "qknob-default",
+    "body": [
+      "<q-knob",
+      "\t:model-value=\"0\"",
+      "\t:min=\"0\"",
+      "\t:max=\"0\"",
+      "\t:step=\"0\"",
+      "\t:instant-feedback=\"false\"",
+      "\tcolor=\"\"",
+      "\tcenter-color=\"\"",
+      "\ttrack-color=\"\"",
+      "\tfont-size=\"0.25em\"",
+      "\t:thickness=\"0\"",
+      "\t:angle=\"0\"",
+      "\t:show-value=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\t:disable=\"false\"",
+      "\t:readonly=\"false\"",
+      "\t@update:model-value=\"null\"",
+      "\t@change=\"null\"",
+      "\t@drag-value=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-knob>"
+    ],
+    "description": ""
+  },
+  "QLayout": {
+    "prefix": "qlayout-default",
+    "body": [
+      "<q-layout",
+      "\tview=\"hhh lpr fff\"",
+      "\t:container=\"false\"",
+      "\t@resize=\"null\"",
+      "\t@scroll=\"null\"",
+      "\t@scroll-height=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-layout>"
+    ],
+    "description": ""
+  },
+  "QLinearProgress": {
+    "prefix": "qlinearprogress-default",
+    "body": [
+      "<q-linear-progress",
+      "\t:value=\"0\"",
+      "\t:buffer=\"0\"",
+      "\tcolor=\"\"",
+      "\ttrack-color=\"\"",
+      "\t:dark=\"false\"",
+      "\t:reverse=\"false\"",
+      "\t:stripe=\"false\"",
+      "\t:indeterminate=\"false\"",
+      "\t:query=\"false\"",
+      "\t:rounded=\"false\"",
+      "\t:instant-feedback=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-linear-progress>"
+    ],
+    "description": ""
+  },
+  "QMarkupTable": {
+    "prefix": "qmarkuptable-default",
+    "body": [
+      "<q-markup-table",
+      "\t:dense=\"false\"",
+      "\t:dark=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:bordered=\"false\"",
+      "\t:square=\"false\"",
+      "\tseparator=\"horizontal\"",
+      "\t:wrap-cells=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-markup-table>"
+    ],
+    "description": ""
+  },
+  "QMenu": {
+    "prefix": "qmenu-default",
+    "body": [
+      "<q-menu",
+      "\t:dark=\"false\"",
+      "\t:fit=\"false\"",
+      "\t:cover=\"false\"",
+      "\tanchor=\"\"",
+      "\tself=\"\"",
+      "\t:offset=\"[]\"",
+      "\t:scroll-target=\"null\"",
+      "\t:touch-position=\"false\"",
+      "\t:persistent=\"false\"",
+      "\t:no-route-dismiss=\"false\"",
+      "\t:auto-close=\"false\"",
+      "\t:separate-close-popup=\"false\"",
+      "\t:square=\"false\"",
+      "\t:no-refocus=\"false\"",
+      "\t:no-focus=\"false\"",
+      "\t:max-height=\"null\"",
+      "\t:max-width=\"null\"",
+      "\t@escape-key=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-menu>"
+    ],
+    "description": ""
+  },
+  "QNoSsr": {
+    "prefix": "qnossr-default",
+    "body": [
+      "<q-no-ssr",
+      "\ttag=\"div\"",
+      "\tplaceholder=\"\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #placeholder>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-no-ssr>"
+    ],
+    "description": ""
+  },
+  "QOptionGroup": {
+    "prefix": "qoptiongroup-default",
+    "body": [
+      "<q-option-group",
+      "\t:model-value=\"null\"",
+      "\t:options=\"[]\"",
+      "\tname=\"\"",
+      "\ttype=\"radio\"",
+      "\tcolor=\"\"",
+      "\t:keep-color=\"false\"",
+      "\t:dark=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:left-label=\"false\"",
+      "\t:inline=\"false\"",
+      "\t:disable=\"false\"",
+      "\t@update:model-value=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QPage": {
+    "prefix": "qpage-default",
+    "body": [
+      "<q-page",
+      "\t:padding=\"false\"",
+      "\t:style-fn=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-page>"
+    ],
+    "description": ""
+  },
+  "QPageContainer": {
+    "prefix": "qpagecontainer-default",
+    "body": [
+      "<q-page-container",
+      ">",
+      "\t${1:content}",
+      "</q-page-container>"
+    ],
+    "description": ""
+  },
+  "QPageScroller": {
+    "prefix": "qpagescroller-default",
+    "body": [
+      "<q-page-scroller",
+      "\t:scroll-offset=\"0\"",
+      "\t:reverse=\"false\"",
+      "\t:duration=\"0\"",
+      "\t:offset=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QPageSticky": {
+    "prefix": "qpagesticky-default",
+    "body": [
+      "<q-page-sticky",
+      "\tposition=\"bottom-right\"",
+      "\t:offset=\"[]\"",
+      "\t:expand=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-page-sticky>"
+    ],
+    "description": ""
+  },
+  "QPagination": {
+    "prefix": "qpagination-default",
+    "body": [
+      "<q-pagination",
+      "\t:model-value=\"0\"",
+      "\t:min=\"0\"",
+      "\t:max=\"0\"",
+      "\tcolor=\"primary\"",
+      "\ttext-color=\"\"",
+      "\tactive-color=\"primary\"",
+      "\t:active-text-color=\"null\"",
+      "\t:dark=\"false\"",
+      "\tinput-style=\"\"",
+      "\tinput-class=\"\"",
+      "\tsize=\"\"",
+      "\t:disable=\"false\"",
+      "\t:input=\"false\"",
+      "\t:icon-prev=\"null\"",
+      "\t:icon-next=\"null\"",
+      "\t:icon-first=\"null\"",
+      "\t:icon-last=\"null\"",
+      "\t:to-fn=\"null\"",
+      "\t:boundary-links=\"false\"",
+      "\t:boundary-numbers=\"false\"",
+      "\t:direction-links=\"false\"",
+      "\t:ellipses=\"false\"",
+      "\t:max-pages=\"0\"",
+      "\t:ripple=\"null\"",
+      "\t:round=\"false\"",
+      "\t:rounded=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:outline=\"false\"",
+      "\t:unelevated=\"false\"",
+      "\t:push=\"false\"",
+      "\t:glossy=\"false\"",
+      "\t:dense=\"false\"",
+      "\tpadding=\"\"",
+      "\t@update:model-value=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QParallax": {
+    "prefix": "qparallax-default",
+    "body": [
+      "<q-parallax",
+      "\tsrc=\"\"",
+      "\t:height=\"0\"",
+      "\t:speed=\"0\"",
+      "\t:scroll-target=\"null\"",
+      "\t@scroll=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #media>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #content>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-parallax>"
+    ],
+    "description": ""
+  },
+  "QPopupEdit": {
+    "prefix": "qpopupedit-default",
+    "body": [
+      "<q-popup-edit",
+      "\t:model-value=\"null\"",
+      "\ttitle=\"\"",
+      "\t:buttons=\"false\"",
+      "\tlabel-set=\"\"",
+      "\tlabel-cancel=\"\"",
+      "\t:auto-save=\"false\"",
+      "\tcolor=\"primary\"",
+      "\t:validate=\"null\"",
+      "\t:disable=\"false\"",
+      "\t:fit=\"false\"",
+      "\t:cover=\"false\"",
+      "\tanchor=\"\"",
+      "\tself=\"\"",
+      "\t:offset=\"[]\"",
+      "\t:touch-position=\"false\"",
+      "\t:persistent=\"false\"",
+      "\t:separate-close-popup=\"false\"",
+      "\t:square=\"false\"",
+      "\t:max-height=\"null\"",
+      "\t:max-width=\"null\"",
+      "\t@update:model-value=\"null\"",
+      "\t@before-show=\"null\"",
+      "\t@show=\"null\"",
+      "\t@before-hide=\"null\"",
+      "\t@hide=\"null\"",
+      "\t@save=\"null\"",
+      "\t@cancel=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-popup-edit>"
+    ],
+    "description": ""
+  },
+  "QPopupProxy": {
+    "prefix": "qpopupproxy-default",
+    "body": [
+      "<q-popup-proxy",
+      "\t:model-value=\"false\"",
+      "\tbreakpoint=\"\"",
+      "\t@update:model-value=\"null\"",
+      "\t@before-show=\"null\"",
+      "\t@show=\"null\"",
+      "\t@before-hide=\"null\"",
+      "\t@hide=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-popup-proxy>"
+    ],
+    "description": ""
+  },
+  "QPullToRefresh": {
+    "prefix": "qpulltorefresh-default",
+    "body": [
+      "<q-pull-to-refresh",
+      "\tcolor=\"\"",
+      "\t:bg-color=\"null\"",
+      "\ticon=\"\"",
+      "\t:no-mouse=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:scroll-target=\"null\"",
+      "\t@refresh=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-pull-to-refresh>"
+    ],
+    "description": ""
+  },
+  "QRadio": {
+    "prefix": "qradio-default",
+    "body": [
+      "<q-radio",
+      "\t:model-value=\"null\"",
+      "\tval=\"\"",
+      "\tlabel=\"\"",
+      "\t:left-label=\"false\"",
+      "\tcolor=\"\"",
+      "\t:keep-color=\"false\"",
+      "\t:dark=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\t@update:model-value=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-radio>"
+    ],
+    "description": ""
+  },
+  "QRange": {
+    "prefix": "qrange-default",
+    "body": [
+      "<q-range",
+      "\t:model-value=\"null\"",
+      "\t:min=\"0\"",
+      "\t:max=\"0\"",
+      "\t:step=\"0\"",
+      "\t:reverse=\"false\"",
+      "\t:vertical=\"false\"",
+      "\t:drag-range=\"false\"",
+      "\t:drag-only-range=\"false\"",
+      "\tcolor=\"\"",
+      "\t:label=\"false\"",
+      "\t:label-color=\"null\"",
+      "\t:label-text-color=\"null\"",
+      "\t:left-label-color=\"null\"",
+      "\t:left-label-text-color=\"null\"",
+      "\t:right-label-color=\"null\"",
+      "\t:right-label-text-color=\"null\"",
+      "\tleft-label-value=\"\"",
+      "\tright-label-value=\"\"",
+      "\t:label-always=\"false\"",
+      "\t:markers=\"false\"",
+      "\t:snap=\"false\"",
+      "\tthumb-path=\"M 4, 10 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0\"",
+      "\t:dark=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:readonly=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\t@update:model-value=\"null\"",
+      "\t@change=\"null\"",
+      "\t@pan=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QRating": {
+    "prefix": "qrating-default",
+    "body": [
+      "<q-rating",
+      "\t:model-value=\"0\"",
+      "\tmax=\"\"",
+      "\ticon=\"\"",
+      "\ticon-selected=\"\"",
+      "\ticon-half=\"\"",
+      "\tcolor=\"\"",
+      "\t:color-selected=\"null\"",
+      "\t:color-half=\"null\"",
+      "\t:no-dimming=\"false\"",
+      "\t:no-reset=\"false\"",
+      "\t:readonly=\"false\"",
+      "\t:disable=\"false\"",
+      "\t@update:model-value=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-rating>"
+    ],
+    "description": ""
+  },
+  "QResizeObserver": {
+    "prefix": "qresizeobserver-default",
+    "body": [
+      "<q-resize-observer",
+      "\tdebounce=\"\"",
+      "\t@resize=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QResponsive": {
+    "prefix": "qresponsive-default",
+    "body": [
+      "<q-responsive",
+      ">",
+      "\t${1:content}",
+      "</q-responsive>"
+    ],
+    "description": ""
+  },
+  "QScrollArea": {
+    "prefix": "qscrollarea-default",
+    "body": [
+      "<q-scroll-area",
+      "\t:dark=\"false\"",
+      "\tbar-style=\"\"",
+      "\tvertical-bar-style=\"\"",
+      "\thorizontal-bar-style=\"\"",
+      "\t:thumb-style=\"null\"",
+      "\t:vertical-thumb-style=\"null\"",
+      "\t:horizontal-thumb-style=\"null\"",
+      "\tcontent-style=\"\"",
+      "\tcontent-active-style=\"\"",
+      "\t:visible=\"false\"",
+      "\tdelay=\"\"",
+      "\t:tabindex=\"0\"",
+      "\t@scroll=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-scroll-area>"
+    ],
+    "description": ""
+  },
+  "QScrollObserver": {
+    "prefix": "qscrollobserver-default",
+    "body": [
+      "<q-scroll-observer",
+      "\tdebounce=\"\"",
+      "\taxis=\"vertical\"",
+      "\t:scroll-target=\"null\"",
+      "\t@scroll=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSelect": {
+    "prefix": "qselect-default",
+    "body": [
+      "<q-select",
+      "\t:model-value=\"null\"",
+      "\t:multiple=\"false\"",
+      "\tdisplay-value=\"\"",
+      "\t:display-value-html=\"null\"",
+      "\t:options=\"[]\"",
+      "\toption-value=\"\"",
+      "\toption-label=\"\"",
+      "\toption-disable=\"\"",
+      "\t:hide-selected=\"false\"",
+      "\t:hide-dropdown-icon=\"false\"",
+      "\tdropdown-icon=\"\"",
+      "\tmax-values=\"\"",
+      "\t:options-dense=\"null\"",
+      "\t:options-dark=\"false\"",
+      "\toptions-selected-class=\"\"",
+      "\t:options-html=\"null\"",
+      "\t:options-cover=\"false\"",
+      "\t:menu-shrink=\"false\"",
+      "\tmenu-anchor=\"\"",
+      "\tmenu-self=\"\"",
+      "\t:menu-offset=\"[]\"",
+      "\tpopup-content-class=\"\"",
+      "\tpopup-content-style=\"\"",
+      "\t:use-input=\"false\"",
+      "\t:use-chips=\"false\"",
+      "\t:fill-input=\"false\"",
+      "\tnew-value-mode=\"\"",
+      "\t:map-options=\"false\"",
+      "\t:emit-value=\"false\"",
+      "\tinput-debounce=\"\"",
+      "\tinput-class=\"\"",
+      "\tinput-style=\"\"",
+      "\t:tabindex=\"0\"",
+      "\tautocomplete=\"\"",
+      "\ttransition-show=\"fade\"",
+      "\ttransition-hide=\"fade\"",
+      "\ttransition-duration=\"\"",
+      "\tbehavior=\"default\"",
+      "\t@update:model-value=\"null\"",
+      "\t@input-value=\"null\"",
+      "\t@remove=\"null\"",
+      "\t@add=\"null\"",
+      "\t@new-value=\"null\"",
+      "\t@filter=\"null\"",
+      "\t@filter-abort=\"null\"",
+      "\t@popup-show=\"null\"",
+      "\t@popup-hide=\"null\"",
+      ">",
+      "\t<template #selected>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #loading>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #before-options>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #after-options>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #no-option>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #selected-item>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #option>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-select>"
+    ],
+    "description": ""
+  },
+  "QSeparator": {
+    "prefix": "qseparator-default",
+    "body": [
+      "<q-separator",
+      "\t:dark=\"false\"",
+      "\tspaced=\"\"",
+      "\tinset=\"\"",
+      "\t:vertical=\"false\"",
+      "\t:size=\"null\"",
+      "\tcolor=\"\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSkeleton": {
+    "prefix": "qskeleton-default",
+    "body": [
+      "<q-skeleton",
+      "\t:dark=\"false\"",
+      "\ttype=\"rect\"",
+      "\tanimation=\"wave\"",
+      "\t:square=\"false\"",
+      "\t:bordered=\"false\"",
+      "\tsize=\"\"",
+      "\twidth=\"\"",
+      "\theight=\"\"",
+      "\ttag=\"div\"",
+      ">",
+      "\t${1:content}",
+      "</q-skeleton>"
+    ],
+    "description": ""
+  },
+  "QSlideItem": {
+    "prefix": "qslideitem-default",
+    "body": [
+      "<q-slide-item",
+      "\t:left-color=\"null\"",
+      "\t:right-color=\"null\"",
+      "\t:top-color=\"null\"",
+      "\t:bottom-color=\"null\"",
+      "\t:dark=\"false\"",
+      "\t@left=\"null\"",
+      "\t@right=\"null\"",
+      "\t@top=\"null\"",
+      "\t@bottom=\"null\"",
+      "\t@slide=\"null\"",
+      "\t@action=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #left>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #right>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #top>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #bottom>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-slide-item>"
+    ],
+    "description": ""
+  },
+  "QSlideTransition": {
+    "prefix": "qslidetransition-default",
+    "body": [
+      "<q-slide-transition",
+      "\t:appear=\"false\"",
+      "\t:duration=\"0\"",
+      "\t@show=\"null\"",
+      "\t@hide=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-slide-transition>"
+    ],
+    "description": ""
+  },
+  "QSlider": {
+    "prefix": "qslider-default",
+    "body": [
+      "<q-slider",
+      "\t:model-value=\"0\"",
+      "\t:min=\"0\"",
+      "\t:max=\"0\"",
+      "\t:step=\"0\"",
+      "\t:reverse=\"false\"",
+      "\t:vertical=\"false\"",
+      "\tcolor=\"\"",
+      "\t:label=\"false\"",
+      "\t:label-color=\"null\"",
+      "\t:label-text-color=\"null\"",
+      "\tlabel-value=\"\"",
+      "\t:label-always=\"false\"",
+      "\t:markers=\"false\"",
+      "\t:snap=\"false\"",
+      "\tthumb-path=\"M 4, 10 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0\"",
+      "\t:dark=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:readonly=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\t@update:model-value=\"null\"",
+      "\t@change=\"null\"",
+      "\t@pan=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpace": {
+    "prefix": "qspace-default",
+    "body": [
+      "<q-space",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinner": {
+    "prefix": "qspinner-default",
+    "body": [
+      "<q-spinner",
+      "\tcolor=\"\"",
+      "\t:thickness=\"0\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerAudio": {
+    "prefix": "qspinneraudio-default",
+    "body": [
+      "<q-spinner-audio",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerBall": {
+    "prefix": "qspinnerball-default",
+    "body": [
+      "<q-spinner-ball",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerBars": {
+    "prefix": "qspinnerbars-default",
+    "body": [
+      "<q-spinner-bars",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerBox": {
+    "prefix": "qspinnerbox-default",
+    "body": [
+      "<q-spinner-box",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerClock": {
+    "prefix": "qspinnerclock-default",
+    "body": [
+      "<q-spinner-clock",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerComment": {
+    "prefix": "qspinnercomment-default",
+    "body": [
+      "<q-spinner-comment",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerCube": {
+    "prefix": "qspinnercube-default",
+    "body": [
+      "<q-spinner-cube",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerDots": {
+    "prefix": "qspinnerdots-default",
+    "body": [
+      "<q-spinner-dots",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerFacebook": {
+    "prefix": "qspinnerfacebook-default",
+    "body": [
+      "<q-spinner-facebook",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerGears": {
+    "prefix": "qspinnergears-default",
+    "body": [
+      "<q-spinner-gears",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerGrid": {
+    "prefix": "qspinnergrid-default",
+    "body": [
+      "<q-spinner-grid",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerHearts": {
+    "prefix": "qspinnerhearts-default",
+    "body": [
+      "<q-spinner-hearts",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerHourglass": {
+    "prefix": "qspinnerhourglass-default",
+    "body": [
+      "<q-spinner-hourglass",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerInfinity": {
+    "prefix": "qspinnerinfinity-default",
+    "body": [
+      "<q-spinner-infinity",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerIos": {
+    "prefix": "qspinnerios-default",
+    "body": [
+      "<q-spinner-ios",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerOrbit": {
+    "prefix": "qspinnerorbit-default",
+    "body": [
+      "<q-spinner-orbit",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerOval": {
+    "prefix": "qspinneroval-default",
+    "body": [
+      "<q-spinner-oval",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerPie": {
+    "prefix": "qspinnerpie-default",
+    "body": [
+      "<q-spinner-pie",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerPuff": {
+    "prefix": "qspinnerpuff-default",
+    "body": [
+      "<q-spinner-puff",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerRadio": {
+    "prefix": "qspinnerradio-default",
+    "body": [
+      "<q-spinner-radio",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerRings": {
+    "prefix": "qspinnerrings-default",
+    "body": [
+      "<q-spinner-rings",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSpinnerTail": {
+    "prefix": "qspinnertail-default",
+    "body": [
+      "<q-spinner-tail",
+      "/>"
+    ],
+    "description": ""
+  },
+  "__spinner-mixin": {
+    "prefix": "__spinner-mixin-default",
+    "body": [
+      "<_spinner-mixin",
+      "\tcolor=\"\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QSplitter": {
+    "prefix": "qsplitter-default",
+    "body": [
+      "<q-splitter",
+      "\t:model-value=\"0\"",
+      "\t:reverse=\"false\"",
+      "\tunit=\"%\"",
+      "\t:emit-immediately=\"false\"",
+      "\t:horizontal=\"false\"",
+      "\t:limits=\"[]\"",
+      "\t:disable=\"false\"",
+      "\tbefore-class=\"\"",
+      "\tafter-class=\"\"",
+      "\tseparator-class=\"\"",
+      "\tseparator-style=\"\"",
+      "\t:dark=\"false\"",
+      "\t@update:model-value=\"null\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #before>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #after>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #separator>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-splitter>"
+    ],
+    "description": ""
+  },
+  "QStep": {
+    "prefix": "qstep-default",
+    "body": [
+      "<q-step",
+      "\ticon=\"\"",
+      "\tcolor=\"\"",
+      "\ttitle=\"\"",
+      "\tcaption=\"\"",
+      "\tprefix=\"\"",
+      "\t:done-icon=\"null\"",
+      "\t:done-color=\"null\"",
+      "\t:active-icon=\"null\"",
+      "\t:active-color=\"null\"",
+      "\t:error-icon=\"null\"",
+      "\t:error-color=\"null\"",
+      "\t:header-nav=\"false\"",
+      "\t:done=\"false\"",
+      "\t:error=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-step>"
+    ],
+    "description": ""
+  },
+  "QStepper": {
+    "prefix": "qstepper-default",
+    "body": [
+      "<q-stepper",
+      "\t:dark=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:bordered=\"false\"",
+      "\t:vertical=\"false\"",
+      "\t:alternative-labels=\"false\"",
+      "\t:header-nav=\"false\"",
+      "\t:contracted=\"false\"",
+      "\t:inactive-icon=\"null\"",
+      "\t:inactive-color=\"null\"",
+      "\t:done-icon=\"null\"",
+      "\t:done-color=\"null\"",
+      "\t:active-icon=\"null\"",
+      "\t:active-color=\"null\"",
+      "\t:error-icon=\"null\"",
+      "\t:error-color=\"null\"",
+      "\theader-class=\"\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #navigation>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #message>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-stepper>"
+    ],
+    "description": ""
+  },
+  "QStepperNavigation": {
+    "prefix": "qsteppernavigation-default",
+    "body": [
+      "<q-stepper-navigation",
+      ">",
+      "\t${1:content}",
+      "</q-stepper-navigation>"
+    ],
+    "description": ""
+  },
+  "QTabPanel": {
+    "prefix": "qtabpanel-default",
+    "body": [
+      "<q-tab-panel",
+      "\t:dark=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-tab-panel>"
+    ],
+    "description": ""
+  },
+  "QTabPanels": {
+    "prefix": "qtabpanels-default",
+    "body": [
+      "<q-tab-panels",
+      ">",
+      "\t${1:content}",
+      "</q-tab-panels>"
+    ],
+    "description": ""
+  },
+  "QTable": {
+    "prefix": "qtable-default",
+    "body": [
+      "<q-table",
+      "\t:rows=\"[]\"",
+      "\trow-key=\"\"",
+      "\t:virtual-scroll=\"false\"",
+      "\tvirtual-scroll-slice-size=\"\"",
+      "\tvirtual-scroll-slice-ratio-before=\"\"",
+      "\tvirtual-scroll-slice-ratio-after=\"\"",
+      "\tvirtual-scroll-item-size=\"\"",
+      "\tvirtual-scroll-sticky-size-start=\"\"",
+      "\tvirtual-scroll-sticky-size-end=\"\"",
+      "\ttable-colspan=\"\"",
+      "\tcolor=\"grey-8\"",
+      "\t:icon-first-page=\"null\"",
+      "\t:icon-prev-page=\"null\"",
+      "\t:icon-next-page=\"null\"",
+      "\t:icon-last-page=\"null\"",
+      "\t:grid=\"false\"",
+      "\t:grid-header=\"false\"",
+      "\t:dense=\"false\"",
+      "\t:columns=\"[]\"",
+      "\t:visible-columns=\"[]\"",
+      "\t:loading=\"false\"",
+      "\ttitle=\"\"",
+      "\t:hide-header=\"false\"",
+      "\t:hide-bottom=\"false\"",
+      "\t:hide-selected-banner=\"false\"",
+      "\t:hide-no-data=\"false\"",
+      "\t:hide-pagination=\"false\"",
+      "\t:dark=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:bordered=\"false\"",
+      "\t:square=\"false\"",
+      "\tseparator=\"horizontal\"",
+      "\t:wrap-cells=\"false\"",
+      "\t:binary-state-sort=\"false\"",
+      "\tcolumn-sort-order=\"ad\"",
+      "\tno-data-label=\"\"",
+      "\tno-results-label=\"\"",
+      "\tloading-label=\"\"",
+      "\t:selected-rows-label=\"null\"",
+      "\trows-per-page-label=\"\"",
+      "\t:pagination-label=\"null\"",
+      "\ttable-style=\"\"",
+      "\ttable-class=\"\"",
+      "\ttable-header-style=\"\"",
+      "\ttable-header-class=\"\"",
+      "\tcard-container-style=\"\"",
+      "\tcard-container-class=\"\"",
+      "\tcard-style=\"\"",
+      "\tcard-class=\"\"",
+      "\ttitle-class=\"\"",
+      "\tfilter=\"\"",
+      "\t:filter-method=\"null\"",
+      "\t:pagination=\"null\"",
+      "\t:rows-per-page-options=\"[]\"",
+      "\tselection=\"none\"",
+      "\t:selected=\"[]\"",
+      "\t:expanded=\"[]\"",
+      "\t:sort-method=\"null\"",
+      "\t@row-click=\"null\"",
+      "\t@row-dblclick=\"null\"",
+      "\t@row-contextmenu=\"null\"",
+      "\t@request=\"null\"",
+      "\t@selection=\"null\"",
+      "\t@update:pagination=\"null\"",
+      "\t@update:selected=\"null\"",
+      "\t@update:expanded=\"null\"",
+      "\t@virtual-scroll=\"null\"",
+      ">",
+      "\t<template #loading>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #item>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #body>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #body-cell>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #body-cell-[name]>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #header>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #header-cell>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #header-cell-[name]>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #body-selection>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #header-selection>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #top-row>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #bottom-row>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #top>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #bottom>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #pagination>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #top-left>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #top-right>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #top-selection>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #no-data>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-table>"
+    ],
+    "description": ""
+  },
+  "QTd": {
+    "prefix": "qtd-default",
+    "body": [
+      "<q-td",
+      "\t:props=\"null\"",
+      "\t:auto-width=\"false\"",
+      "\t:no-hover=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-td>"
+    ],
+    "description": ""
+  },
+  "QTh": {
+    "prefix": "qth-default",
+    "body": [
+      "<q-th",
+      "\t:props=\"null\"",
+      "\t:auto-width=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-th>"
+    ],
+    "description": ""
+  },
+  "QTr": {
+    "prefix": "qtr-default",
+    "body": [
+      "<q-tr",
+      "\t:props=\"null\"",
+      "\t:no-hover=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-tr>"
+    ],
+    "description": ""
+  },
+  "QRouteTab": {
+    "prefix": "qroutetab-default",
+    "body": [
+      "<q-route-tab",
+      "\t:to=\"null\"",
+      "\t@click=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QTab": {
+    "prefix": "qtab-default",
+    "body": [
+      "<q-tab",
+      "\ticon=\"\"",
+      "\tlabel=\"\"",
+      "\talert=\"\"",
+      "\talert-icon=\"\"",
+      "\tname=\"\"",
+      "\t:no-caps=\"false\"",
+      "\tcontent-class=\"\"",
+      "\t:ripple=\"false\"",
+      "\t:tabindex=\"0\"",
+      "\t:disable=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-tab>"
+    ],
+    "description": ""
+  },
+  "QTabs": {
+    "prefix": "qtabs-default",
+    "body": [
+      "<q-tabs",
+      "\t:model-value=\"null\"",
+      "\t:vertical=\"false\"",
+      "\t:outside-arrows=\"false\"",
+      "\t:mobile-arrows=\"false\"",
+      "\talign=\"center\"",
+      "\tbreakpoint=\"\"",
+      "\t:active-color=\"null\"",
+      "\t:active-bg-color=\"null\"",
+      "\t:indicator-color=\"null\"",
+      "\tcontent-class=\"\"",
+      "\tleft-icon=\"\"",
+      "\tright-icon=\"\"",
+      "\t:stretch=\"false\"",
+      "\t:shrink=\"false\"",
+      "\t:switch-indicator=\"false\"",
+      "\t:narrow-indicator=\"false\"",
+      "\t:inline-label=\"false\"",
+      "\t:no-caps=\"false\"",
+      "\t:dense=\"false\"",
+      "\t@update:model-value=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-tabs>"
+    ],
+    "description": ""
+  },
+  "QTime": {
+    "prefix": "qtime-default",
+    "body": [
+      "<q-time",
+      "\tmodel-value=\"\"",
+      "\t:format24h=\"false\"",
+      "\tdefault-date=\"current day\"",
+      "\t:mask=\"null\"",
+      "\t:options=\"null\"",
+      "\t:hour-options=\"[]\"",
+      "\t:minute-options=\"[]\"",
+      "\t:second-options=\"[]\"",
+      "\t:with-seconds=\"false\"",
+      "\t:now-btn=\"false\"",
+      "\t@update:model-value=\"null\"",
+      ">",
+      "\t${1:content}",
+      "</q-time>"
+    ],
+    "description": ""
+  },
+  "QTimeline": {
+    "prefix": "qtimeline-default",
+    "body": [
+      "<q-timeline",
+      "\tcolor=\"\"",
+      "\tside=\"right\"",
+      "\tlayout=\"dense\"",
+      "\t:dark=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-timeline>"
+    ],
+    "description": ""
+  },
+  "QTimelineEntry": {
+    "prefix": "qtimelineentry-default",
+    "body": [
+      "<q-timeline-entry",
+      "\t:heading=\"false\"",
+      "\ttag=\"h3\"",
+      "\tside=\"right\"",
+      "\ticon=\"\"",
+      "\tavatar=\"\"",
+      "\tcolor=\"\"",
+      "\ttitle=\"\"",
+      "\tsubtitle=\"\"",
+      "\tbody=\"\"",
+      ">",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #title>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #subtitle>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-timeline-entry>"
+    ],
+    "description": ""
+  },
+  "QToggle": {
+    "prefix": "qtoggle-default",
+    "body": [
+      "<q-toggle",
+      "\ticon=\"\"",
+      "\tchecked-icon=\"\"",
+      "\tunchecked-icon=\"\"",
+      "\tindeterminate-icon=\"\"",
+      "\t:icon-color=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QToolbar": {
+    "prefix": "qtoolbar-default",
+    "body": [
+      "<q-toolbar",
+      "\t:inset=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-toolbar>"
+    ],
+    "description": ""
+  },
+  "QToolbarTitle": {
+    "prefix": "qtoolbartitle-default",
+    "body": [
+      "<q-toolbar-title",
+      "\t:shrink=\"false\"",
+      ">",
+      "\t${1:content}",
+      "</q-toolbar-title>"
+    ],
+    "description": ""
+  },
+  "QTooltip": {
+    "prefix": "qtooltip-default",
+    "body": [
+      "<q-tooltip",
+      "\t:max-height=\"null\"",
+      "\t:max-width=\"null\"",
+      "\t:transition-show=\"null\"",
+      "\t:transition-hide=\"null\"",
+      "\tanchor=\"bottom middle\"",
+      "\tself=\"top middle\"",
+      "\t:offset=\"[]\"",
+      "\t:scroll-target=\"null\"",
+      "\ttarget=\"\"",
+      "\t:no-parent-event=\"false\"",
+      "\t:delay=\"0\"",
+      "\t:hide-delay=\"0\"",
+      ">",
+      "\t${1:content}",
+      "</q-tooltip>"
+    ],
+    "description": ""
+  },
+  "QTree": {
+    "prefix": "qtree-default",
+    "body": [
+      "<q-tree",
+      "\t:nodes=\"[]\"",
+      "\tnode-key=\"\"",
+      "\tlabel-key=\"label\"",
+      "\tchildren-key=\"children\"",
+      "\t:no-connectors=\"false\"",
+      "\tcolor=\"\"",
+      "\tcontrol-color=\"\"",
+      "\ttext-color=\"\"",
+      "\t:selected-color=\"null\"",
+      "\t:dark=\"false\"",
+      "\ticon=\"\"",
+      "\ttick-strategy=\"none\"",
+      "\t:ticked=\"[]\"",
+      "\t:expanded=\"[]\"",
+      "\t:selected=\"null\"",
+      "\t:default-expand-all=\"false\"",
+      "\t:accordion=\"false\"",
+      "\tfilter=\"\"",
+      "\t:filter-method=\"null\"",
+      "\t:duration=\"0\"",
+      "\tno-nodes-label=\"\"",
+      "\tno-results-label=\"\"",
+      "\t@update:expanded=\"null\"",
+      "\t@lazy-load=\"null\"",
+      "\t@update:ticked=\"null\"",
+      "\t@update:selected=\"null\"",
+      "\t@after-show=\"null\"",
+      "\t@after-hide=\"null\"",
+      ">",
+      "\t<template #default-header>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #header-[name]>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #default-body>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #body-[name]>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-tree>"
+    ],
+    "description": ""
+  },
+  "QUploader": {
+    "prefix": "quploader-default",
+    "body": [
+      "<q-uploader",
+      "\tlabel=\"\"",
+      "\tcolor=\"\"",
+      "\ttext-color=\"\"",
+      "\t:dark=\"false\"",
+      "\t:square=\"false\"",
+      "\t:flat=\"false\"",
+      "\t:bordered=\"false\"",
+      "\t:no-thumbnails=\"false\"",
+      "\t:auto-upload=\"false\"",
+      "\t:hide-upload-btn=\"false\"",
+      "\t:disable=\"false\"",
+      "\t:readonly=\"false\"",
+      "\t@added=\"null\"",
+      "\t@removed=\"null\"",
+      "\t@start=\"null\"",
+      "\t@finish=\"null\"",
+      ">",
+      "\t<template #header>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #list>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-uploader>"
+    ],
+    "description": ""
+  },
+  "QUploaderAddTrigger": {
+    "prefix": "quploaderaddtrigger-default",
+    "body": [
+      "<q-uploader-add-trigger",
+      "/>"
+    ],
+    "description": ""
+  },
+  "xhr-uploader-plugin": {
+    "prefix": "xhr-uploader-plugin-default",
+    "body": [
+      "<hr-uploader-plugin",
+      "\t:factory=\"null\"",
+      "\turl=\"\"",
+      "\tmethod=\"\"",
+      "\tfield-name=\"\"",
+      "\t:headers=\"null\"",
+      "\t:form-fields=\"null\"",
+      "\t:with-credentials=\"null\"",
+      "\t:send-raw=\"null\"",
+      "\t:batch=\"null\"",
+      "\t@uploaded=\"null\"",
+      "\t@failed=\"null\"",
+      "\t@uploading=\"null\"",
+      "\t@factory-failed=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QVideo": {
+    "prefix": "qvideo-default",
+    "body": [
+      "<q-video",
+      "\tsrc=\"\"",
+      "/>"
+    ],
+    "description": ""
+  },
+  "QVirtualScroll": {
+    "prefix": "qvirtualscroll-default",
+    "body": [
+      "<q-virtual-scroll",
+      "\ttype=\"list\"",
+      "\t:items=\"[]\"",
+      "\t:items-size=\"0\"",
+      "\t:items-fn=\"null\"",
+      "\t:scroll-target=\"null\"",
+      ">",
+      "\t<template #before>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #after>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "\t<template #default>",
+      "\t\t{$1:content}",
+      "\t</template>",
+      "</q-virtual-scroll>"
+    ],
+    "description": ""
+  },
+  "use-virtual-scroll": {
+    "prefix": "use-virtual-scroll-default",
+    "body": [
+      "<se-virtual-scroll",
+      "\t:virtual-scroll-horizontal=\"false\"",
+      "\tvirtual-scroll-slice-size=\"\"",
+      "\tvirtual-scroll-slice-ratio-before=\"\"",
+      "\tvirtual-scroll-slice-ratio-after=\"\"",
+      "\tvirtual-scroll-item-size=\"\"",
+      "\tvirtual-scroll-sticky-size-start=\"\"",
+      "\tvirtual-scroll-sticky-size-end=\"\"",
+      "\ttable-colspan=\"\"",
+      "\t@virtual-scroll=\"null\"",
+      "/>"
+    ],
+    "description": ""
+  }
+}
