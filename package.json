@@ -2,7 +2,7 @@
 	"name": "memi-quasar-snippets",
 	"displayName": "memi-quasar-snippets",
 	"description": "vscode snippets for quasar",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "fkkmemi",
 	"repository": {
 		"type": "git",

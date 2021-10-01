@@ -154,9 +154,10 @@ const convertBody = (key, value) => {
   if (existsSlots) {
     bs.push(`>`);
     if (existsSlots > 1) {
+      let count = 1;
       for (const [k, v] of Object.entries(value.slots)) {
         bs.push(`\t<template #${k}>`);
-        bs.push('\t\t{$1:content}');
+        bs.push(`\t\t\${${count++}:content}`);
         bs.push(`\t</template>`);
       }
     } else {

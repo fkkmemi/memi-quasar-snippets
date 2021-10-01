@@ -2,10 +2,26 @@
 
 "quasar-snippets" was not updated, so I made it myself.
 
+## Usages
+
+![Usage](images/usage.gif)
 ## Features
 
 - componentName-default: by "node_modules/quasar/components/{componentName}.json"
 - componentName-example: by "[quasar-snippets](https://marketplace.visualstudio.com/items?itemName=abdelaziz18003.quasar-snippets)"
+
+## Example
+
+**qinit**
+```vue
+<script setup lang="ts">
+import { } from 'vue'
+
+</script>
+<template>
+  
+</template>
+```
 
 **qpage-default**
 ```html

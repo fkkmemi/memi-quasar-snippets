@@ -1,13 +1,13 @@
 {
   "Vue3 init script-setup": {
-    "prefix": "vueinit",
+    "prefix": "qinit",
     "body": [
 			"<script setup lang=\"ts\">",
 			"import { } from 'vue'",
-			"$2",
+			"$0",
 			"</script>",
 			"<template>",
-			"\t<div>new</div>",
+			"\t$1",
 			"</template>",
 			""
 		],
