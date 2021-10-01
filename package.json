@@ -7,17 +7,17 @@
 		"vscode": "^1.60.0"
 	},
 	"categories": [
-		"Other"
+		"Snippets"
 	],
-	"activationEvents": [
-        "onCommand:memi-quasar-snippets.helloWorld"
-	],
-	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
+		"snippets": [
 			{
-				"command": "memi-quasar-snippets.helloWorld",
-				"title": "Hello World"
+				"language": "vue",
+				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/quasar-eg.json"
 			}
 		]
 	},

@@ -1,0 +1,16 @@
+{
+  "Vue init aaa": {
+    "prefix": "vueinit",
+    "body": [
+			"<script setup lang=\"ts\">",
+			"import { } from 'vue'",
+			"$2",
+			"</script>",
+			"<template>",
+			"\t<div>new</div>",
+			"</template>",
+			""
+		],
+    "description": "for first vue file"
+  }
+}

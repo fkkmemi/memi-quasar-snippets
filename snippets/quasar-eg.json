@@ -1,0 +1,972 @@
+{
+  "QLayout-eg": {
+    "prefix": "qlayout-eg",
+    "body": [
+      "<q-layout view=\"${1:hHr LpR lFf}\" ${2:container}>$0</q-layout>"
+    ],
+    "description": "The QLayout is a component designed to manage the entire window and wrap page content with elements such as a navigational bar or a drawer. Multiple pages can share the same QLayout, so the code is reusable, which is one of their key points."
+  },
+  "QHeader-eg": {
+    "prefix": "qheader-eg",
+    "body": [
+      "<q-header v-model=\"${1:header}\" ${2:reveal} ${3:elevated} ${4:bordered}>$0</q-header>"
+    ],
+    "description": "Layout header"
+  },
+  "QFooter-eg": {
+    "prefix": "qfooter-eg",
+    "body": [
+      "<q-footer v-model=\"${1:footer}\" ${2:reveal} ${3:elevated} ${4:bordered}>$0</q-footer>"
+    ],
+    "description": "Layout footer"
+  },
+  "QDrawer-eg": {
+    "prefix": "qdrawer-eg",
+    "body": [
+      "<q-layout-drawer",
+      "\tside=\"${1:left}\"",
+      "\tv-model=\"${2:drawerLeft}\"",
+      "\t${3:bordered}",
+      "\t:width=\"${4:200}\"",
+      "\t:breakpoint=\"${5:500}\"",
+      "\tcontent-class=\"${6:bg-grey-3}\"",
+      ">",
+      "\t$0",
+      "</q-layout-drawer>"
+    ],
+    "description": "QDrawer is the sidebar part of your QLayout."
+  },
+  "QPageContainer-eg": {
+    "prefix": "qpagecontainer-eg",
+    "body": [
+      "<q-page-container>$0</q-page-container>"
+    ],
+    "description": "Usually, the QPageContainer is part of the Layout template (where it contains a <router-view /> child only), and its content goes into separate vue files under /src/pages."
+  },
+  "QPage-eg": {
+    "prefix": "qpage-eg",
+    "body": [
+      "<q-page :style-fn=\"${1:myTweak}\" ${2:padding}>$0</q-page>"
+    ],
+    "description": "A component that holds page content"
+  },
+  "QPageSticky-eg": {
+    "prefix": "qpagesticky-eg",
+    "body": [
+      "<q-page-sticky position=\"${1:top-right}\" :offset=\"[${2:18,18}]\" ${3:expand}>",
+      "\t$0",
+      "</q-page-sticky>"
+    ],
+    "description": "The QPageSticky component helps in placing DOM elements / components wrapped by it into a static position within the content area of your QPage, no matter where the user scrolls."
+  },
+  "QPageScroller-eg": {
+    "prefix": "qpagescroller-eg",
+    "body": [
+      "<q-page-scroller position=\"${1:bottom-right}\" :scroll-offset=\"${2:150}\" :offset=\"[${3:18, 18}]\">",
+      "\t<q-btn fab icon=\"keyboard_arrow_up\" color=\"accent\" />",
+      "</q-page-scroller>"
+    ],
+    "description": "The QPageScroller component helps in placing DOM elements / components wrapped by it into a static position within the content area of your QPage, no matter where the user scrolls. It only appears after a scroll-offset (property) is reached. Once visible, the user can click on it to quickly get back to the top of the page via duration property."
+  },
+  "QFab-eg": {
+    "prefix": "qfab-eg",
+    "body": [
+      "<q-fab color=\"${1:primary}\" icon=\"${2:add}\" direction=\"${3:up}\">",
+      "\t<q-fab-action color=\"${4:purple}\" @click=\"${5:someMethod}\" icon=\"${6:mail}\" />",
+      "</q-fab>"
+    ],
+    "description": "A Floating Action Button (FAB) represents the primary action in an App Page. But, it’s not limited to only a single action. It can contain any number of sub-actions too"
+  },
+  "QAjaxBar-eg": {
+    "prefix": "qajaxbar-eg",
+    "body": [
+      "<q-ajax-bar position=\"${1:top}\" size=\"${2:4px}\" color=\"${3:red}\" ${4:skip-hijack}/>"
+    ],
+    "description": "QAjaxBar is a component which displays a loading bar (like Youtube) whenever an Ajax call (regardless of Ajax library used) is in progress. It can be manually triggered as well."
+  },
+  "QAvatar-eg": {
+    "prefix": "qavatar-eg",
+    "body": [
+      "<q-avatar size=\"${1:100px}\" font-size=\"${2:52px}\" color=\"${3:teal}\" text-color=\"${4:white}\" icon=\"${5:directions}\" />"
+    ],
+    "description": "The QAvatar component creates a scalable, color-able element that can have text, icon or image within its shape. By default it is circular, but it can also be square or have a border-radius applied to give rounded corners to the square shape."
+  },
+  "QBadge-eg": {
+    "prefix": "qbadge-eg",
+    "body": [
+      "<q-badge color=\"{1:orange}\" text-color=\"{2:black}\" label=\"{3:v1.0.0}\" />"
+    ],
+    "description": "The QBadge component allows you to create a small badge for adding information like contextual data that needs to stand out and get noticed. It is also often useful in combination with other elements like a user avatar to show a number of new messages."
+  },
+  "QBanner-eg": {
+    "prefix": "qbanner-eg",
+    "body": [
+      "<q-banner class=\"{1:bg-primary text-white}\">",
+      "\t{2:Unfortunately, the credit card did not go through, please try again.}",
+      "\t<template v-slot:action>",
+      "\t\t<q-btn flat color=\"{3:white}\" label=\"{4:Dismiss}\" />",
+      "\t\t<q-btn flat color=\"{5:white}\" label=\"{6:Update Credit Card}\" />",
+      "\t</template>",
+      "</q-banner>"
+    ],
+    "description": "The QBanner component creates a banner element to display a prominent message and related optional actions."
+  },
+  "QBar-eg": {
+    "prefix": "qbar-eg",
+    "body": [
+      "<q-bar dark class=\"${1:bg-primary text-white}\">",
+      "\t<q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"red\" />",
+      "\t<q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"yellow\" />",
+      "\t<q-btn dense flat round icon=\"lens\" size=\"8.5px\" color=\"green\" />",
+      "\t<div class=\"col text-center text-weight-bold\">",
+      "\t\t${2:My-App}",
+      "\t</div>",
+      "</q-bar>"
+    ],
+    "description": "The QBar is a small component for creating the top bar on different types of mobile or desktop websites/apps."
+  },
+  "QBreadcrumbs-eg": {
+    "prefix": "qbreadcrumbs-eg",
+    "body": [
+      "<q-breadcrumbs>",
+      "\t<q-breadcrumbs-el label=\"${1:Home}\" icon=\"${2:home}\" />",
+      "\t<q-breadcrumbs-el label=\"${3:Components}\" icon=\"${4:widgets}\" />",
+      "\t<q-breadcrumbs-el label=\"${5:Breadcrumbs}\" icon=\"${6:navigation}\" />",
+      "</q-breadcrumbs>"
+    ],
+    "description": "The QBreadcrumbs component is used as a navigational aid in UI. It allows users to keep track of their location within programs, documents, or websites. Most common use is it’s in a QToolbar, but it’s not limited to it."
+  },
+  "QBtn-eg": {
+    "prefix": "qbtn-eg",
+    "body": [
+      "<q-btn color=\"${1:primary}\" icon=\"${2:check}\" label=\"${3:OK}\" @click=\"${4:onClick}\" />$0"
+    ],
+    "description": "QBtn is a button with a few extra useful features. For instance, it comes in two shapes: rectangle (default) and round. It also has the material ripple effect baked in (which can be disabled)."
+  },
+  "QBtnGroup-eg": {
+    "prefix": "qbtngroup-eg",
+    "body": [
+      "<q-btn-group>",
+      "\t<q-btn label=\"${1:One}\" @click=\"${2:clickHandler1}\"/>",
+      "\t<q-btn label=\"${3:Two}\" @click=\"${4:clickHandler2}\"/>",
+      "\t<q-btn label=\"${5:Three}\" @click=\"${6:clickHandler3}\"/>",
+      "</q-btn-group>"
+    ],
+    "description": "You can conveniently group QBtn and QBtnDropdown using QBtnGroup"
+  },
+  "QBtnDropdown-eg": {
+    "prefix": "qbtndropdown-eg",
+    "body": [
+      "<q-btn-dropdown label=\"${1:Button}\" color=\"${2:primary}\">",
+      "\t<q-list>",
+      "\t\t<q-item clickable v-close-popup @click=\"${3:onItemClick}\">",
+      "\t\t\t<q-item-section>",
+      "\t\t\t\t<q-item-label>${4:Photos}</q-item-label>",
+      "\t\t\t</q-item-section>",
+      "\t\t</q-item>",
+      "\t</q-list>",
+      "</q-btn-dropdown>"
+    ],
+    "description": "QBtnDropdown is a very convenient dropdown button. Goes very well with QList as dropdown content, but it’s by no means limited to it."
+  },
+  "QCard-eg": {
+    "prefix": "qcard-eg",
+    "body": [
+      "<q-card class=\"my-card\">",
+      "\t<img src=\"${1:https://cdn.quasar.dev/img/mountains.jpg}\">",
+      "\t<q-card-section>",
+      "\t\t<div class=\"text-h6\">${2:Our Changing Planet}</div>",
+      "\t\t<div class=\"text-subtitle2\">${3:by John Doe}</div>",
+      "\t</q-card-section>",
+      "\t<q-card-section>",
+      "\t\t${4:Lorem ipsum dolor sit amet, consectetur adipiscing elit}",
+      "\t</q-card-section>",
+      "</q-card>"
+    ],
+    "description": "The QCard component is a great way to display important pieces of grouped content. This pattern is quickly emerging as a core design pattern for Apps, website previews and email content. It assists the viewer by containing and organizing information, while also setting up predictable expectations."
+  },
+  "QCardSection-eg": {
+    "prefix": "qcardsection-eg",
+    "body": [
+      "<q-card-section>",
+      "\tLorem ipsum dolor sit amet",
+      "</q-card-section>"
+    ],
+    "description": "No Description yet."
+  },
+  "QCardActions-eg": {
+    "prefix": "qcardactions-eg",
+    "body": [
+      "<q-card-actions ${1:vertical} align=\"${2:center}\">",
+      "\t<q-btn flat label=\"${3:Action 1}\" />",
+      "\t<q-btn flat label=\"${4:Action 2}\" />",
+      "</q-card-actions>"
+    ],
+    "description": "Cards can have some actions (buttons) attached to them."
+  },
+  "QCarousel-eg": {
+    "prefix": "qcarousel-eg",
+    "body": [
+      "<q-carousel",
+      "\tv-model=\"slide\"",
+      "\ttransition-prev=\"jump-right\"",
+      "\ttransition-next=\"jump-left\"",
+      "\tswipeable",
+      "\tanimated",
+      "\tcontrol-color=\"white\"",
+      "\tprev-icon=\"arrow_left\"",
+      "\tnext-icon=\"arrow_right\"",
+      "\tnavigation-icon=\"radio_button_unchecked\"",
+      "\tnavigation",
+      "\tpadding",
+      "\tarrows",
+      "\theight=\"300px\"",
+      "\tclass=\"bg-purple text-white shadow-1 rounded-borders\"",
+      ">",
+      "\t<q-carousel-slide name=\"style\" class=\"column no-wrap flex-center\">",
+      "\t\t<q-icon name=\"style\" size=\"56px\" />",
+      "\t\t<div class=\"q-mt-md text-center\">",
+      "\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "\t\t</div>",
+      "\t</q-carousel-slide>",
+      "\t<q-carousel-slide name=\"tv\" class=\"column no-wrap flex-center\">",
+      "\t\t<q-icon name=\"live_tv\" size=\"56px\" />",
+      "\t\t<div class=\"q-mt-md text-center\">",
+      "\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "\t\t</div>",
+      "\t</q-carousel-slide>",
+      "</q-carousel>"
+    ],
+    "description": "The QCarousel component allows you to display more information with less real estate, using slides. Useful for creating Wizards or an image gallery too."
+  },
+  "QChatMessage-eg": {
+    "prefix": "qchatmessage-eg",
+    "body": [
+      "<q-chat-message",
+      "\tname=\"${1:me}\"",
+      "\tavatar=\"${2:https://cdn.quasar.dev/img/avatar3.jpg}\"",
+      "\t:text=\"['${3:hey, how are you?}']\"",
+      "\tstamp=\"${4:7 minutes ago}\"",
+      "\t${5:sent}",
+      "\tbg-color=\"${6:amber-7}\"",
+      "/>"
+    ],
+    "description": "Quasar supplies a chat component called QChatMessage which is really a chat entry that renders the data given by the props."
+  },
+  "QChip-eg": {
+    "prefix": "qchip-eg",
+    "body": [
+      "<q-chip class=\"${1:glossy}\" icon=\"${2:directions}\" label=\"${3:Get directions}\" />"
+    ],
+    "description": "The QChip component is basically a simple UI block entity, representing for example more advanced underlying data, such as a contact, in a compact way."
+  },
+  "QCircularProgress-eg": {
+    "prefix": "qcircularprogress-eg",
+    "body": [
+      "<q-circular-progress",
+      "\t${1:indeterminate}",
+      "\tsize=\"${2:90px}\"",
+      "\t:thickness=\"${3:0.2}\"",
+      "\tcolor=\"${4:lime}\"",
+      "\tcenter-color=\"${5:grey-8}\"",
+      "\ttrack-color=\"${6:transparent}\"",
+      "\tclass=\"${7:q-ma-md}\"",
+      "/>"
+    ],
+    "description": "The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
+  },
+  "QColor-eg": {
+    "prefix": "qcolor-eg",
+    "body": [
+      "<q-color v-model=\"hex\" inline class=\"my-picker\" />"
+    ],
+    "description": "The QColor component provides a method to input colors."
+  },
+  "QDialog-eg": {
+    "prefix": "qdialog-eg",
+    "body": [
+      "<q-dialog v-model=\"${1:confirm}\" persistent>",
+      "\t<q-card>",
+      "\t\t<q-card-section class=\"row items-center\">",
+      "\t\t\t<q-avatar icon=\"signal_wifi_off\" color=\"primary\" text-color=\"white\" />",
+      "\t\t\t<span class=\"q-ml-sm\">You are currently not connected to any network.</span>",
+      "\t\t</q-card-section>",
+      "\t\t<q-card-actions align=\"right\">",
+      "\t\t\t<q-btn flat label=\"${2:Cancel}\" color=\"primary\" v-close-popup />",
+      "\t\t\t<q-btn flat label=\"${3:Turn on Wifi}\" color=\"primary\" v-close-popup />",
+      "\t\t</q-card-actions>",
+      "\t</q-card>",
+      "</q-dialog>"
+    ],
+    "description": "The QDialog component is a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions)."
+  },
+  "QEditor-eg": {
+    "prefix": "qeditor-eg",
+    "body": [
+      "<q-editor v-model=\"${1:editor}\" min-height=\"${2:5rem}\" ${3:flat}/>"
+    ],
+    "description": "The QEditor component is a WYSIWYG (“what you see is what you get”) editor component that enables the user to write and even paste HTML."
+  },
+  "QExpansionItem-eg": {
+    "prefix": "qexpansionitem-eg",
+    "body": [
+      "<q-expansion-item",
+      "  ${1:expand-separator}",
+      "  icon=\"${2:perm_identity}\"",
+      "  label=\"${3:Account settings}\"",
+      "  caption=\"${4:John Doe}\"",
+      ">",
+      "  $0",
+      "</q-expansion-item>"
+    ],
+    "description": "The QExpansionItem component allows the hiding of content that is not immediately relevant to the user. Think of them as accordion elements that expand when clicked on. It’s also known as a collapsible."
+  },
+  "QInput-eg": {
+    "prefix": "qinput-eg",
+    "body": [
+      "<q-input v-model=\"${1:text}\" type=\"${2:text}\" label=\"${3:Label}\" />$0"
+    ],
+    "description": "The QInput component is used to capture text input from the user. It uses v-model, similar to a regular input. It has support for errors and validation, and comes in a variety of styles, colors, and types."
+  },
+  "QSelect-eg": {
+    "prefix": "qselect-eg",
+    "body": [
+      "<q-select v-model=\"${1:model}\" :options=\"${2:options}\" label=\"${3:Standard}\" ${4:filled} />"
+    ],
+    "description": "The QSelect component has two types of selection: single or multiple. This component opens up a menu for the selection list and action. A filter can also be used for longer lists."
+  },
+  "QForm-eg": {
+    "prefix": "qform-eg",
+    "body": [
+      "<q-form",
+      "\t@submit=\"${1:onSubmit}\"",
+      "\t@reset=\"${2:onReset}\"",
+      "\tclass=\"q-gutter-md\"",
+      ">",
+      "\t$0",
+      "\t<div>",
+      "\t\t<q-btn label=\"${3:Submit}\" type=\"submit\" color=\"primary\"/>",
+      "\t\t<q-btn label=\"${4:Reset}\" type=\"reset\" color=\"primary\" flat class=\"q-ml-sm\" />",
+      "\t</div>",
+      "</q-form>"
+    ],
+    "description": "The QForm component renders a <form> DOM element and allows you to easily validate child form components (like QInput, QSelect or your QField wrapped components) that have the internal validation (NOT the external one) through rules associated with them."
+  },
+  "QField-eg": {
+    "prefix": "qfield-eg",
+    "body": [
+      "<q-field ${1:rounded} ${2:filled} label=\"${3:Rounded filled}\" ${4:stack-label}>",
+      "\t$0",
+      "</q-field>"
+    ],
+    "description": "The QField component is used to provide common functionality and aspect to form components. It uses :value (or v-model if you want to use clearable property) to have knowledge of the model of the component inside. It has support for labels, hints, errors, validation, and comes in a variety of styles and colors."
+  },
+  "QRadio-eg": {
+    "prefix": "qradio-eg",
+    "body": [
+      "<q-radio v-model=\"${1:shape}\" val=\"${2:line}\" label=\"${3:Line}\" />"
+    ],
+    "description": "The QRadio component is another basic element for user input. You can use this to supply a way for the user to pick an option from multiple choices."
+  },
+  "QCheckbox-eg": {
+    "prefix": "qcheckbox-eg",
+    "body": [
+      "<q-checkbox ${1:left-label} v-model=\"${2:orange}\" label=\"${3:Orange}\" />"
+    ],
+    "description": "The QCheckbox component is another basic element for user input. You can use this to supply a way for the user to toggle an option."
+  },
+  "QToggle-eg": {
+    "prefix": "qtoggle-eg",
+    "body": [
+      "<q-toggle v-model=\"${1:value}\" color=\"${2:green}\" />"
+    ],
+    "description": "The QToggle component is another basic element for user input. You can use this for turning settings, features or true/false inputs on and off."
+  },
+  "QBtnToggle-eg": {
+    "prefix": "qbtntoggle-eg",
+    "body": [
+      "<q-btn-toggle",
+      "\tv-model=\"${1:model}\"",
+      "\ttoggle-color=\"${2:primary}\"",
+      "\t:options=\"[",
+      "\t\t{label: '${3:One}', value: '${4:one}'},",
+      "\t\t{label: '${5:Two}', value: '${6:two}'},",
+      "\t\t{label: '${7:Three}', value: '${8:three}'}",
+      "\t]\"",
+      "/>"
+    ],
+    "description": "The QBtnToggle component is another basic element for user input, similar to QRadio but with buttons. You can use this to supply a way for the user to pick an option from multiple choices."
+  },
+  "QOptionGroup-eg": {
+    "prefix": "qoptiongroup-eg",
+    "body": [
+      "<q-option-group",
+      "\tv-model=\"${1:group}\"",
+      "\ttype=\"${2:checkbox}\"",
+      "\tcolor=\"${3:secondary}\"",
+      "\t:options=\"${4:options}\"",
+      "/>"
+    ],
+    "description": "The QOptionGroup component is a helper component that allows you better control for grouping binary (on or off, true or false, 1 or 0) form input components like checkboxes, radios or toggles. A good use for this component is for offering a set of options or settings to turn on and off."
+  },
+  "QSlider-eg": {
+    "prefix": "qslider-eg",
+    "body": [
+      "<q-slider",
+      "\tv-model=\"${1:model}\"",
+      "\t:min=\"${2:1}\"",
+      "\t:max=\"${3:7}\"",
+      "\t:step=\"${4:2}\"",
+      "\tcolor=\"${5:green}\"",
+      "/>"
+    ],
+    "description": "The QSlider is a great way for the user to specify a number value between a minimum and maximum value, with optional steps between valid values."
+  },
+  "QRange-eg": {
+    "prefix": "qrange-eg",
+    "body": [
+      "<q-range",
+      "\tv-model=\"${1:rangeValues}\"",
+      "\t:min=\"${2:0}\"",
+      "\t:max=\"${3:10}\"",
+      "\t:step=\"${4:1}\"",
+      "\tcolor=\"${5:green}\"",
+      "/>"
+    ],
+    "description": "Range component is a great way to offer the user the selection of a sub-range of values between a minimum and maximum value, with optional steps to select those values"
+  },
+  "QTime-eg": {
+    "prefix": "qtime-eg",
+    "body": [
+      "<q-time",
+      "\tv-model=\"${1:timeWithSeconds}\"",
+      "\t${2:with-seconds}",
+      "/>"
+    ],
+    "description": "The QTime component provides a method to input time."
+  },
+  "QDate-eg": {
+    "prefix": "qdate-eg",
+    "body": [
+      "<q-date",
+      "\tv-model=\"${1:date}\"",
+      "\t${2:landscape}",
+      "\t${3:minimal}",
+      "/>"
+    ],
+    "description": "The QDate component provides a method to input date. Currently it supports Gregorian (default) and Persian calendars."
+  },
+  "QIcon-eg": {
+    "prefix": "qicon-eg",
+    "body": [
+      "<q-icon name=\"${1:print}\" />"
+    ],
+    "description": "The QIcon component allows you to easily insert icons within other components or any other area of your pages."
+  },
+  "QImg-eg": {
+    "prefix": "qimg-eg",
+    "body": [
+      "<q-img",
+      "\t:src=\"${1:https://placeimg.com/500/300/nature}\"",
+      "\t:ratio=\"${2:16/9}\"",
+      "\tspinner-color=\"${3:primary}\"",
+      "\tspinner-size=\"${4:82px}\"",
+      "/>"
+    ],
+    "description": "The QImg component makes working with images (any picture format) easy and also adds a nice loading effect to it along with many other features (example: the ability to set an aspect ratio)."
+  },
+  "QInfiniteScroll-eg": {
+    "prefix": "qinfinitescroll-eg",
+    "body": [
+      "<q-infinite-scroll @load=\"onLoad\" :offset=\"250\">",
+      "\t<div v-for=\"(item, index) in items\" :key=\"index\" class=\"caption\">",
+      "\t\t<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>",
+      "\t</div>",
+      "\t<template v-slot:loading>",
+      "\t\t<div class=\"row justify-center q-my-md\">",
+      "\t\t\t<q-spinner-dots color=\"primary\" size=\"40px\" />",
+      "\t\t</div>",
+      "\t</template>",
+      "</q-infinite-scroll>"
+    ],
+    "description": "The QInfiteScroll component allows you to load new content as the user scrolls the page."
+  },
+  "QInnerLoading-eg": {
+    "prefix": "qinnerloading-eg",
+    "body": [
+      "<q-inner-loading :showing=\"${1:visible}\">",
+      "\t<q-spinner-gears size=\"${2:50px}\" color=\"${3:primary}\" />",
+      "</q-inner-loading>"
+    ],
+    "description": "The QInnerLoading component allows you to add a progress animation within a component. Much like the Loading Plugin, it’s purpose is to offer visual confirmation to the user that some process is happening in the background, which takes an excessive amount of time."
+  },
+  "QKnob-eg": {
+    "prefix": "qknob-eg",
+    "body": [
+      "<q-knob",
+      "\t:min=\"${1:5}\"",
+      "\t:max=\"${2:10}\"",
+      "\tv-model=\"${3:value1}\"",
+      "\t${4:show-value}",
+      "\tsize=\"${5:50px}\"",
+      "\t:thickness=\"${6:0.22}\"",
+      "\tcolor=\"${7:teal}\"",
+      "\ttrack-color=\"${8:grey-3}\"",
+      "\tclass=\"${9:q-ma-md}\"",
+      "/>"
+    ],
+    "description": "The QKnob component is used to take a number input from the user through mouse/touch panning. It is based on QCircularProgress and inherits all its properties and behavior."
+  },
+  "QLinearProgress-eg": {
+    "prefix": "qlinearprogress-eg",
+    "body": [
+      "<q-linear-progress",
+      "\t:value=\"${1:progress}\"",
+      "\t${2:rounded}",
+      "\tcolor=\"${3:purple}\"",
+      "\ttrack-color=\"${4:orange}\"",
+      "\tclass=\"${5:q-mt-sm}\"",
+      "/>"
+    ],
+    "description": "The QLinearProgress component displays a colored loading bar. The bar can either have a determinate progress or an indeterminate animation. It should be used to inform the user that an action is occurring in the background."
+  },
+  "QList-eg": {
+    "prefix": "qlist-eg",
+    "body": [
+      "<q-list bordered>",
+      "\t<q-item ${1:clickable} ${2:v-ripple}>",
+      "\t\t<q-item-section ${3:avatar}>",
+      "\t\t\t<q-icon color=\"${4:primary}\" name=\"${5:bluetooth}\" />",
+      "\t\t</q-item-section>",
+      "\t\t<q-item-section>Icon as avatar</q-item-section>",
+      "\t</q-item>",
+      "</q-list>"
+    ],
+    "description": "The QList and QItem are a group of components which can work together to present multiple line items vertically as a single continuous element."
+  },
+  "QItem-eg": {
+    "prefix": "qitem-eg",
+    "body": [
+      "<q-item>",
+      "\t<q-item-section top avatar>",
+      "\t\t<q-avatar color=\"primary\" text-color=\"white\" icon=\"bluetooth\" />",
+      "\t</q-item-section>",
+      "\t<q-item-section>",
+      "\t\t<q-item-label>Single line item</q-item-label>",
+      "\t\t<q-item-label caption lines=\"2\">Secondary line text.</q-item-label>",
+      "\t</q-item-section>",
+      "\t<q-item-section side top>",
+      "\t\t<q-item-label caption>5 min ago</q-item-label>",
+      "\t\t<q-icon name=\"star\" color=\"yellow\" />",
+      "\t</q-item-section>",
+      "</q-item>"
+    ],
+    "description": "Lists can encapsulate Items or Item-like components, for example QCollapsible."
+  },
+  "QMarkupTable-eg": {
+    "prefix": "qmarkuptable-eg",
+    "body": [
+      "<q-markup-table>",
+      "\t<thead>",
+      "\t\t<tr>",
+      "\t\t\t<th class=\"text-left\">${1:Dessert}</th>",
+      "\t\t\t<th class=\"text-right\">${2:Calories}</th>",
+      "\t\t</tr>",
+      "\t</thead>",
+      "\t<tbody>",
+      "\t\t<tr>",
+      "\t\t\t<td class=\"text-left\">${3:Frozen Yogurt}</td>",
+      "\t\t\t<td class=\"text-right\">${4:159}</td>",
+      "\t\t</tr>",
+      "\t</tbody>",
+      "</q-markup-table>"
+    ],
+    "description": "The QMarkupTable is a way for you to simply wrap a native <table> in order to make it look like a Material Design table."
+  },
+  "QMenu-eg": {
+    "prefix": "qmenu-eg",
+    "body": [
+      "<q-menu>",
+      "\t<q-list style=\"min-width: 100px\">",
+      "\t\t<q-item clickable v-close-popup>",
+      "\t\t\t<q-item-section>New tab</q-item-section>",
+      "\t\t</q-item>",
+      "\t\t<q-separator />",
+      "\t\t<q-item clickable v-close-popup>",
+      "\t\t\t<q-item-section>New incognito tab</q-item-section>",
+      "\t\t</q-item>",
+      "\t</q-list>",
+      "</q-menu>"
+    ],
+    "description": "The QMenu component is a convenient way to show menus. Goes very well with QList as dropdown content, but it’s by no means limited to it."
+  },
+  "QNoSsr-eg": {
+    "prefix": "qnossr-eg",
+    "body": [
+      "<q-no-ssr>",
+      "\t<div>This won't be rendered on server</div>",
+      "</q-no-ssr>"
+    ],
+    "description": "The QNoSsr component makes sense only if you are creating a SSR website/app. It avoids rendering its content on the server and leaves that for client only. Useful when you got code that is not isomorphic and can only run on the client side, in a browser."
+  },
+  "QResizeObservable-eg": {
+    "prefix": "qresizeobservable-eg",
+    "body": [
+      "<q-resize-observable @resize=\"${1:onResize}\" />$0"
+    ],
+    "description": "QResizeObserver is a Quasar component that emits a resize event whenever the wrapping DOM element / component (defined as direct parent of QResizeObserver) changes its size (width and/or height)."
+  },
+  "QScrollObservable-eg": {
+    "prefix": "qscrollobservable-eg",
+    "body": [
+      "<q-scroll-observable @scroll=\"${1:onScroll}\" />"
+    ],
+    "description": "QScrollObserver is a Quasar component that emits a scroll event whenever the user scrolls the page or overflowed container with .scroll CSS class applied to it."
+  },
+  "QPagination-eg": {
+    "prefix": "qpagination-eg",
+    "body": [
+      "<q-pagination v-model=\"${1:current}\" :max=\"${2:6}\" />"
+    ],
+    "description": "The QPagination component is available for whenever a pagination system is required. It offers the user a simple UI for moving between items or pages."
+  },
+  "QParallax-eg": {
+    "prefix": "qparallax-eg",
+    "body": [
+      "<q-parallax",
+      "\tsrc=\"${1:https://cdn.quasar.dev/img/parallax2.jpg}\"",
+      "\t:speed=\"${2:0.5}\"",
+      ">",
+      "\t$0",
+      "</q-parallax>"
+    ],
+    "description": "Parallax scrolling is a technique in computer graphics and web design, where background images move by the camera slower than foreground images, creating an illusion of depth in a 2D scene and adding to the immersion."
+  },
+  "QPopupEdit-eg": {
+    "prefix": "qpopupedit-eg",
+    "body": [
+      "<q-popup-edit v-model=\"${1:props.row.name}\" title=\"${2:Edit the Name}\">",
+      "\t<q-input v-model=\"${3:props.row.name}\" ${4:dense} ${5:autofocus} />",
+      "</q-popup-edit>"
+    ],
+    "description": "The QPopupEdit component can be used to edit a value “in place”, like for example a cell in QTable. By default, a cell is displayed as a String, then if you are using QPopupEdit and a user clicks/taps on the table cell, a popup will open where the user will be able to edit the value using a textfield."
+  },
+  "QPopupProxy-eg": {
+    "prefix": "qpopupproxy-eg",
+    "body": [
+      "<q-popup-proxy>",
+      "\t<q-banner>",
+      "\t\t<template v-slot:avatar>",
+      "\t\t\t<q-icon name=\"${1:signal_wifi_off}\" color=\"${2:primary}\" />",
+      "\t\t</template>",
+      "\t\t${3:You have lost connection to the internet. This app is offline.}",
+      "\t</q-banner>",
+      "</q-popup-proxy>"
+    ],
+    "description": "QPopupProxy should be used when you need either a QMenu (on bigger screens) or a QDialog (on smaller screens) to be displayed. It acts as a proxy which picks either of the two components to use. QPopupProxy also handles context-menus."
+  },
+  "QPullToRefresh-eg": {
+    "prefix": "qpulltorefresh-eg",
+    "body": [
+      "<q-pull-to-refresh @refresh=\"${1:refresh}\" color=\"primary\">",
+      "\t$0",
+      "</q-pull-to-refresh>"
+    ],
+    "description": "The QPullToRefresh is a component that allows the user to pull down in order to refresh page content (or retrieve the newest content)."
+  },
+  "QRating-eg": {
+    "prefix": "qrating-eg",
+    "body": [
+      "<q-rating",
+      "  v-model=\"${1:ratingModel}\"",
+      "  size=\"${2:1.5em}\"",
+      "  icon=\"${3:star}\"",
+      "/>"
+    ],
+    "description": "Quasar Rating is a Component which allows users to rate items, usually known as “Star Rating”."
+  },
+  "QScrollArea-eg": {
+    "prefix": "qscrollarea-eg",
+    "body": [
+      "<q-scroll-area style=\"width: ${1:400px}; height: ${2:200px};\">",
+      "\t<div v-for=\"${3:n} in ${4:10}\">",
+      "\t\tLorem ipsum dolor sit amet, consectetur adipisicing",
+      "\t</div>",
+      "</q-scroll-area>"
+    ],
+    "description": "The QScrollArea component offers a neat way of customizing the scrollbars by encapsulating your content. Think of it as a DOM element which has overflow: auto, but with your own custom styled scrollbar instead of browser’s default one and a few nice features on top."
+  },
+  "QSeparator-eg": {
+    "prefix": "qseparator-eg",
+    "body": [
+      "<q-separator ${1:spaced} ${2:inset} ${3:vertical} ${4:dark} />"
+    ],
+    "description": "The QSeparator component is used to separate sections of text, other components, etc… It creates a colored line across the width of the parent. It can be horizontal or vertical."
+  },
+  "QSlideItem-eg": {
+    "prefix": "qslideItem-eg",
+    "body": [
+      "<q-slide-item @left=\"${1:onLeft}\" @right=\"${2:onRight}\">",
+      "\t<template v-slot:left>",
+      "\t\t<q-icon name=\"${3:done}\" />",
+      "\t</template>",
+      "\t<template v-slot:right>",
+      "\t\t<q-icon name=\"${4:alarm}\" />",
+      "\t</template>",
+      "\t<q-item>",
+      "\t\t<q-item-section avatar>",
+      "\t\t\t<q-avatar color=\"${5:primary}\" text-color=\"${6:white}\" icon=\"${7:bluetooth}\" />",
+      "\t\t</q-item-section>",
+      "\t\t<q-item-section>${8:Icons only}</q-item-section>",
+      "\t</q-item>",
+      "</q-slide-item>"
+    ],
+    "description": "The QSlideItem component is essentially a QItem with two additional slots (left and right) which allows user to drag the item (through mouse or with the finger on a touch device) to one of the sides in order to apply a specific action."
+  },
+  "QSlideTransition-eg": {
+    "prefix": "qslidetransition-eg",
+    "body": [
+      "<q-slide-transition>",
+      "\t<div v-show=\"visible\">",
+      "\t\t<img",
+      "\t\t\tclass=\"responsive\"",
+      "\t\t\tsrc=\"https://cdn.quasar.dev/img/quasar.jpg\"",
+      "\t\t>",
+      "\t</div>",
+      "</q-slide-transition>"
+    ],
+    "description": "QSlideTransition slides the DOM element (or component) up or down, based on its visibility: works alongside v-show and v-if on a single element, similar to Vue’s Transition component with the only difference being that it’s not a group transition too (it only applies to one DOM element or component)."
+  },
+  "QSpace-eg": {
+    "prefix": "qspace-eg",
+    "body": [
+      "<q-space />"
+    ],
+    "description": "The purpose of QSpace (has no props) is to simply fill all available space inside of a flexbox DOM element."
+  },
+  "QSpinner-eg": {
+    "prefix": "qspinner-eg",
+    "body": [
+      "<q-spinner-${1:gears}",
+      "\tcolor=\"${2:primary}\"",
+      "\tsize=\"${3:3rem}\"",
+      "\t:thickness=\"${4:5}\"",
+      "/>"
+    ],
+    "description": "A Spinner is used to show the user a timely process is currently taking place. It is an important UX feature, which gives the user the feeling the system is continuing to work for longer term activities, like grabbing data from the server or some heavy calculations."
+  },
+  "QSplitter-eg": {
+    "prefix": "qsplitter-eg",
+    "body": [
+      "<q-splitter",
+      "\tv-model=\"${1:splitterModel}\"",
+      "\tstyle=\"${2:height: 400px}\"",
+      "\t${3:horizontal}",
+      ">",
+      "\t<template v-slot:before>",
+      "\t\t$4",
+      "\t</template>",
+      "\t<template v-slot:separator>",
+      "\t\t<q-avatar color=\"primary\" text-color=\"white\" size=\"40px\" icon=\"drag_indicator\" />",
+      "\t</template>",
+      "\t<template v-slot:after>",
+      "\t\t$5",
+      "\t</template>",
+      "</q-splitter>"
+    ],
+    "description": "The QSplitter component allow containers to be split vertically and/or horizontally through a draggable separator bar."
+  },
+  "QStepper-eg": {
+    "prefix": "qstepper-eg",
+    "body": [
+      "<q-stepper",
+      "\tv-model=\"${1:step}\"",
+      "\tref=\"${2:stepper}\"",
+      "\tcolor=\"${3:primary}\"",
+      "\t${4:animated}",
+      ">",
+      "\t<q-step",
+      "\t\t:name=\"${5:1}\"",
+      "\t\ttitle=\"${6:Select campaign settings}\"",
+      "\t\ticon=\"${7:settings}\"",
+      "\t\t:done=\"${8:step > 1}\"",
+      "\t>",
+      "\t\tFor each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.",
+      "\t</q-step>",
+      "\t<q-step",
+      "\t\t:name=\"${9:2}\"",
+      "\t\ttitle=\"${10:Create an ad group}\"",
+      "\t\tcaption=\"${11:Optional}\"",
+      "\t\ticon=\"${12:create_new_folder}\"",
+      "\t\t:done=\"${13:step > 2}\"",
+      "\t>",
+      "\t\tAn ad group contains one or more ads which target a shared set of keywords.",
+      "\t</q-step>",
+      "\t<template v-slot:navigation>",
+      "\t\t<q-stepper-navigation>",
+      "\t\t\t<q-btn @click=\"\\$refs.stepper.next()\" color=\"primary\" :label=\"step === 2 ?'Finish' : 'Continue'\" />",
+      "\t\t\t<q-btn v-if=\"step > 1\" flat color=\"primary\" @click=\"\\$refs.stepper.previous()\" label=\"Back\" class=\"q-ml-sm\" />",
+      "\t\t</q-stepper-navigation>",
+      "\t</template>",
+      "</q-stepper>"
+    ],
+    "description": "A Stepper conveys progress through numbered steps. Steppers display progress through a sequence of logical and numbered steps. They may also be used for navigation. It’s usually useful when the user has to follow steps to complete a process."
+  },
+  "QTable-eg": {
+    "prefix": "qtable-eg",
+    "body": [
+      "<q-table",
+      "\ttitle=\"${1:Table Title}\"",
+      "\t:data=\"${2:data}\"",
+      "\t:columns=\"${3:columns}\"",
+      "\trow-key=\"${4:name}\"",
+      "/>"
+    ],
+    "description": "QTable is a component that allows you to display data in a tabular manner. It’s generally called a datatable."
+  },
+  "QTabs-eg": {
+    "prefix": "qtabs-eg",
+    "body": [
+      "<q-tabs",
+      "\tv-model=\"${1:tab}\"",
+      "\tclass=\"${2:text-teal}\"",
+      ">",
+      "\t<q-tab name=\"${3:mails}\" icon=\"${4:mail}\" label=\"${5:Mails}\" />",
+      "\t<q-tab name=\"${6:alarms}\" icon=\"${7:alarm}\" label=\"${8:Alarms}\" />",
+      "\t<q-tab name=\"${9:movies}\" icon=\"${10:movie}\" label=\"${11:Movies}\" />",
+      "</q-tabs>"
+    ],
+    "description": "Tabs are a way of displaying more information using less window real estate."
+  },
+  "QTabPanels-eg": {
+    "prefix": "qtabpanels-eg",
+    "body": [
+      "<q-tab-panels v-model=\"${1:tab}\" animated>",
+      "\t<q-tab-panel name=\"${2:mails}\">",
+      "\t\t<div class=\"text-h6\">${3:Mails}</div>",
+      "\t\tLorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "\t</q-tab-panel>",
+      "\t<q-tab-panel name=\"${4:alarms}\">",
+      "\t\t<div class=\"text-h6\">${5:Alarms}</div>",
+      "\t\tLorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "\t</q-tab-panel>",
+      "\t<q-tab-panel name=\"${6:movies}\">",
+      "\t\t<div class=\"text-h6\">${7:Movies}</div>",
+      "\t\tLorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "\t</q-tab-panel>",
+      "</q-tab-panels>"
+    ],
+    "description": "Tab panels are a way of displaying more information using less window real estate."
+  },
+  "QTimeline-eg": {
+    "prefix": "qtimeline-eg",
+    "body": [
+      "<q-timeline color=\"secondary\" layout=\"dense\">",
+      "\t<q-timeline-entry heading>",
+      "\t\tTimeline heading",
+      "\t</q-timeline-entry>",
+      "\t<q-timeline-entry",
+      "\t\ttitle=\"Event Title\"",
+      "\t\tsubtitle=\"February 22, 1986\"",
+      "\t\tavatar=\"https://cdn.quasar.dev/img/avatar2.jpg\"",
+      "\t>",
+      "\t\t<div>",
+      "\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "\t\t</div>",
+      "\t</q-timeline-entry>",
+      "\t<q-timeline-entry",
+      "\t\ttitle=\"Event Title\"",
+      "\t\tsubtitle=\"February 22, 1986\"",
+      "\t\tcolor=\"orange\"",
+      "\t\ticon=\"done_all\"",
+      "\t>",
+      "\t\t<div>",
+      "\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "\t\t</div>",
+      "\t</q-timeline-entry>",
+      "</q-timeline>"
+    ],
+    "description": "The QTimeline component displays a list of events in chronological order. It is typically a graphic design showing a long bar labelled with dates alongside itself and usually events. Timelines can use any time scale, depending on the subject and data."
+  },
+  "QToolbar-eg": {
+    "prefix": "qtoolbar-eg",
+    "body": [
+      "<q-toolbar class=\"bg-${1:purple} text-${2:white}\">",
+      "\t<q-btn flat round dense icon=\"${3:assignment_ind}\" />",
+      "\t<q-toolbar-title>",
+      "\t\t${4:Toolbar}",
+      "\t</q-toolbar-title>",
+      "\t<q-btn flat round dense icon=\"${5:apps}\" class=\"q-mr-xs\" />",
+      "\t<q-btn flat round dense icon=\"${6:more_vert}\" />",
+      "</q-toolbar>"
+    ],
+    "description": "QToolbar is a component usually part of Layout Header and Footer, but it can be used anywhere on the page."
+  },
+  "QTooltip-eg": {
+    "prefix": "qtooltip-eg",
+    "body": [
+      "<q-tooltip v-model=\"${1:showing}\">",
+      "\t$0",
+      "</q-tooltip>"
+    ],
+    "description": "The QTooltip component is to be used when you want to offer the user more information about a certain area in your App. When hovering the mouse over the target element (or quickly tapping on mobile platforms), the tooltip will appear."
+  },
+  "QTree-eg": {
+    "prefix": "qtree-eg",
+    "body": [
+      "<q-tree",
+      "\t:nodes=\"${1:simple}\"",
+      "\tnode-key=\"${2:label}\"",
+      "\t:expanded.sync=\"${3:expanded}\"",
+      "\t${4:dark}",
+      "/>"
+    ],
+    "description": "Quasar Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure."
+  },
+  "QUploader-eg": {
+    "prefix": "quploader-eg",
+    "body": [
+      "<q-uploader",
+      "\turl=\"${1:http://localhost:4444/upload}\"",
+      "\tcolor=\"${2:teal}\"",
+      "\t${3:flat}",
+      "\t${4:bordered}",
+      "\tstyle=\"${5:max-width: 300px}\"",
+      "/>"
+    ],
+    "description": "Quasar supplies a way for you to upload files through the QUploader component."
+  },
+  "QVideo-eg": {
+    "prefix": "qvideo-eg",
+    "body": [
+      "<q-video",
+      "\tsrc=\"${1:https://www.youtube.com/embed/k3_tw44QsZQ?rel=0}\"",
+      "/>"
+    ],
+    "description": "Using the QVideo component makes embedding a video like Youtube easy. It also resizes to fit the container by default."
+  },
+  "QVirtualScroll-eg": {
+    "prefix": "qvirtualscroll-eg",
+    "body": [
+      "<q-virtual-scroll",
+      "\tstyle=\"max-height: 300px;\"",
+      "\t:items=\"${1:heavyList}\"",
+      "\t${2:separator}",
+      ">",
+      "\t<template v-slot=\"{ item, index }\">",
+      "\t\t<q-item",
+      "\t\t\t:key=\"index\"",
+      "\t\t\tdense",
+      "\t\t>",
+      "\t\t\t<q-item-section>",
+      "\t\t\t\t<q-item-label>",
+      "\t\t\t\t\t#{{ index }} - {{ item.label }}",
+      "\t\t\t\t</q-item-label>",
+      "\t\t\t</q-item-section>",
+      "\t\t</q-item>",
+      "\t</template>",
+      "</q-virtual-scroll>"
+    ],
+    "description": "The QVirtualScroll component allows you to display only a part of a long list of items and update the visible items as the user scrolls in the container. This has several advantages: only visible items are rendered, so the smallest number of nodes are in the DOM tree at any given point in time and the memory consumption is kept at its lowest."
+  }
+}
