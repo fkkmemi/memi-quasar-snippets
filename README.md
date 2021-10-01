@@ -26,12 +26,6 @@
 
 ## Known Issues
 
-## Release Notes
-
-### 0.0.1
-2021.10.1
-- Initial release
-
 ## Link
 
 made by [https://memi.dev](https://memi.dev)

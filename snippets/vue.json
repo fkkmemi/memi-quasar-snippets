@@ -1,5 +1,5 @@
 {
-  "Vue init aaa": {
+  "Vue3 init script-setup": {
     "prefix": "vueinit",
     "body": [
 			"<script setup lang=\"ts\">",
