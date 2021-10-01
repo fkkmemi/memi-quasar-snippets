@@ -5,15 +5,18 @@
 ## Usages
 
 ![Usage](images/usage.gif)
+
+> eg) qinit -> ref -> (tab) -> const message = ref('hello') -> (tab) -> (esc x 2) -> qcard-default -> {{ message }}
+
 ## Features
 
-- componentName-default: by "node_modules/quasar/components/{componentName}.json"
-- componentName-example: by "[quasar-snippets](https://marketplace.visualstudio.com/items?itemName=abdelaziz18003.quasar-snippets)"
+- {componentName}-default: by "node_modules/quasar/components/{componentName}.json"
+- {componentName}-example: by "[quasar-snippets](https://marketplace.visualstudio.com/items?itemName=abdelaziz18003.quasar-snippets)"
 
 ## Example
 
 **qinit**
-```vue
+```html
 <script setup lang="ts">
 import { } from 'vue'
 
@@ -36,7 +39,6 @@ import { } from 'vue'
 ```html
 <q-page :style-fn="myTweak" padding></q-page>
 ```
-
 ## Requirements
 - quasar 2.1
 

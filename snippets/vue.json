@@ -3,11 +3,11 @@
     "prefix": "qinit",
     "body": [
 			"<script setup lang=\"ts\">",
-			"import { } from 'vue'",
-			"$0",
+			"import { $1 } from 'vue'",
+			"$2",
 			"</script>",
 			"<template>",
-			"\t$1",
+			"\t$3",
 			"</template>",
 			""
 		],
