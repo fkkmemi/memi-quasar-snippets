@@ -1,5 +1,12 @@
 # Change Log
 
+
+## 0.0.6 (2021.10.3)
+
+### fixed
+
+- props examples '$' bug fix ($ -> \\$)
+
 ## 0.0.5 (2021.10.3)
 
 ### added

@@ -115,10 +115,14 @@ const setPropDefault = (value, init) => {
     defaultValue = value.default
   } else if (value.examples) {
     if (value.examples.length) {
-      defaultValue = value.examples[0]
+      const firstExample = value.examples[0]
+      defaultValue = typeof firstExample === 'string' ? firstExample.replace(/\$/gi, '\\$') : firstExample
     }
   } else if (value.values) {
-    defaultValue = value.values[0]
+    if (value.values.length) {
+      const firstValue = value.values[0]
+      defaultValue = typeof firstValue === 'string' ? firstValue.replace(/\$/gi, '\\$') : firstValue
+    }
   } 
   return defaultValue
 }
@@ -153,7 +157,7 @@ const convertObj = (p) => {
         }
       }
       if (value.type === 'String') {
-        props[key] = '';
+        // props[key] = ''
         props[key] = setPropDefault(value, '')
       } else if (value.type === 'Boolean') {
         props[key] = false;
@@ -168,7 +172,7 @@ const convertObj = (p) => {
         // props[key] = isString ? '' : null;
         props[key] = isString ? setPropDefault(value, '') : null;
       } else {
-        props[key] = setUnknownType(key);
+        props[key] = setPropDefault(value, null) || setUnknownType(key)
       }
     }
   }
