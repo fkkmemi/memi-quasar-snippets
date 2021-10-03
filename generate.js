@@ -2,25 +2,28 @@ const fs = require('fs');
 const path = require('path');
 const kebabCase = require("kebab-case");
 
-const baseURL = './node_modules/quasar/src/components';
-const dir = fs.readdirSync(baseURL);
+const baseURL = './node_modules/quasar/src';
+const componentsURL = path.join(baseURL, 'components')
+const componentsNames = fs.readdirSync(componentsURL);
 const files = [];
 const snippets = {};
 const outputJSON = {};
-const extendsJson = JSON.parse(fs.readFileSync('./node_modules/quasar/src/api.extends.json').toString());
+const extendsURL = path.join(baseURL, 'api.extends.json')
+const extendsJson = JSON.parse(fs.readFileSync(extendsURL).toString());
 
-// let count = 0;
-for (const d of dir) {
-  const p = path.join(baseURL, d);
-  const jsons = fs.readdirSync(p).map(f => path.join(p, f)).filter(f => path.extname(f) === '.json');
-  if (!jsons.length) {continue;};
-  // if (count++ === 42) {
-  //   console.log(p);
-  //   files.push(...jsons);
-  // }
+const convertFile = (fileName) => {
+  const jsons = fs.readdirSync(fileName)
+    .map(f => path.join(fileName, f))
+    .filter(f => path.extname(f) === '.json' && f.includes('Q'));
+  
+  if (!jsons.length) { return; };
   files.push(...jsons);
-  // count++;
-  // if (count > 1) {break;};
+}
+
+const convertFiles = () => {
+  for (const name of componentsNames) {
+    convertFile(path.join(componentsURL, name))
+  }
 }
 
 const setUnknownType = (key) => {
@@ -68,23 +71,57 @@ const setUnknownType = (key) => {
 
 const getSnippet = (p) => {
   const name = path.parse(p).name;
-  if (name === 'use-btn') {
-    return snippets['QBtn'];
-  } else if (name === 'use-checkbox') {
-    return snippets['QCheckbox'];
-  } else if (name === 'use-datetime') {
-    return snippets['QDate'];
-  } else if (name === 'use-fab') {
-    return snippets['QFab'];
-  }
   snippets[name] = {
     props: {},
     events: {},
     slots: {},
     methods: {}
   };
+
   return snippets[name];  
 };
+
+const getMixins = (json) => {
+  if (!json.mixins) return
+  json.mixins.forEach(mixin => {
+    const mixinsURL = path.join(baseURL, mixin +'.json')    
+    const mixinsJSON = JSON.parse(fs.readFileSync(mixinsURL).toString())    
+    if (mixinsJSON.props) {
+      for (const [key, value] of Object.entries(mixinsJSON.props)) {
+        json.props[key] = value
+      }
+    }
+    if (mixinsJSON.events) {
+      for (const [key, value] of Object.entries(mixinsJSON.events)) {
+        json.events[key] = value
+      }
+    }
+    if (mixinsJSON.slots) {
+      for (const [key, value] of Object.entries(mixinsJSON.slots)) {
+        json.slots[key] = value
+      }
+    }
+    if (mixinsJSON.methods) {
+      for (const [key, value] of Object.entries(mixinsJSON.methods)) {
+        json.methods[key] = value
+      }
+    }
+  })
+}
+
+const setPropDefault = (value, init) => {
+  let defaultValue = init
+  if (value.default) {
+    defaultValue = value.default
+  } else if (value.examples) {
+    if (value.examples.length) {
+      defaultValue = value.examples[0]
+    }
+  } else if (value.values) {
+    defaultValue = value.values[0]
+  } 
+  return defaultValue
+}
 
 const convertObj = (p) => {
   const snippet = getSnippet(p);
@@ -94,6 +131,11 @@ const convertObj = (p) => {
   const methods = snippet.methods;
   const bf = fs.readFileSync(p);
   const json = JSON.parse(bf.toString());
+  if (!json.props) json.props = {}
+  if (!json.events) json.events = {}
+  if (!json.slots) json.slots = {}
+  if (!json.methods) json.methods = {}
+  getMixins(json)
   if (json.props) {
     for (const [key, value] of Object.entries(json.props)) {
       if (value.extends) {
@@ -105,21 +147,26 @@ const convertObj = (p) => {
           if (extendProp.default) {
             value.default = extendProp.default;
           }
+          if (extendProp.examples) {
+            value.examples = extendProp.examples;
+          }
         }
       }
       if (value.type === 'String') {
-        props[key] = value.default || '';
+        props[key] = '';
+        props[key] = setPropDefault(value, '')
       } else if (value.type === 'Boolean') {
         props[key] = false;
       } else if (value.type === 'Number') {
-        props[key] = 0;
+        // props[key] = 0;
+        props[key] = setPropDefault(value, 0);
       } else if (value.type === 'Array') {
-        props[key] = [];
-      // } else if (value.extends) {
-      //   props[key] = value.default || extendsType(key);
+        // props[key] = []
+        props[key] = setPropDefault(value, []);
       } else if (typeof value.type === 'object') {
         const isString = Array.isArray(value.type) ? value.type.includes('String') : false;
-        props[key] = isString ? '' : null;
+        // props[key] = isString ? '' : null;
+        props[key] = isString ? setPropDefault(value, '') : null;
       } else {
         props[key] = setUnknownType(key);
       }
@@ -141,11 +188,13 @@ const convertObj = (p) => {
     }
   }
 };
-files.forEach(file => {
-  convertObj(file);
-});
 
-// console.log(snippets);
+const convertObjs = () => {
+
+  files.forEach(file => {
+    convertObj(file);
+  });
+}
 
 const convertBody = (key, value) => {
   const bs = [];
@@ -154,7 +203,7 @@ const convertBody = (key, value) => {
   const existsProps = Object.keys(value.props).length;
   const existsSlots = Object.keys(value.slots).length;
   const existsEvents = Object.keys(value.events).length;
-  const existsMethods = Object.keys(value.methods).length;
+  // const existsMethods = Object.keys(value.methods).length;
   if (existsProps) {
     for (const [k, v] of Object.entries(value.props)) {
       const prop = typeof v === 'string'
@@ -199,8 +248,12 @@ const convertJSON = () => {
     };
   }
 };
+
+convertFiles()
+// convertFile(path.join(componentsURL, 'badge'))
+
+convertObjs();
 convertJSON();
-// console.log(outputJSON);
 const saveJSON = () => {
   const url = './snippets/quasar-default.json';
   fs.writeFileSync(url, JSON.stringify(outputJSON, null, 2));
