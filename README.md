@@ -41,6 +41,7 @@ import { } from 'vue'
 ```
 ## Requirements
 - quasar 2.1
+- vscode volar extension
 
 ## Known Issues
 

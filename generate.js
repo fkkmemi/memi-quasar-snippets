@@ -7,6 +7,8 @@ const dir = fs.readdirSync(baseURL);
 const files = [];
 const snippets = {};
 const outputJSON = {};
+const extendsJson = JSON.parse(fs.readFileSync('./node_modules/quasar/src/api.extends.json').toString());
+
 // let count = 0;
 for (const d of dir) {
   const p = path.join(baseURL, d);
@@ -20,7 +22,8 @@ for (const d of dir) {
   // count++;
   // if (count > 1) {break;};
 }
-const extendsType = (key) => {
+
+const setUnknownType = (key) => {
   const types = [
     { name: 'dense', value: false },
     { name: 'rounded', value: false },
@@ -32,6 +35,11 @@ const extendsType = (key) => {
     { name: 'flat', value: false },
     { name: 'bordered', value: false },
     { name: 'autoplay', value: false },
+    { name: 'padding', value: false },
+    { name: 'label-html', value: false },
+    { name: 'name-html', value: false },
+    { name: 'text-html', value: false },
+    { name: 'stamp-html', value: false },
     { name: 'color', value: '' },
     { name: 'text-color', value: '' },
     { name: 'separator-color', value: '' },
@@ -88,6 +96,17 @@ const convertObj = (p) => {
   const json = JSON.parse(bf.toString());
   if (json.props) {
     for (const [key, value] of Object.entries(json.props)) {
+      if (value.extends) {
+        const extendProp = extendsJson.props[key];
+        if (extendProp) {
+          if (extendProp.type) {
+            value.type = extendProp.type;
+          }
+          if (extendProp.default) {
+            value.default = extendProp.default;
+          }
+        }
+      }
       if (value.type === 'String') {
         props[key] = value.default || '';
       } else if (value.type === 'Boolean') {
@@ -96,13 +115,13 @@ const convertObj = (p) => {
         props[key] = 0;
       } else if (value.type === 'Array') {
         props[key] = [];
-      } else if (value.extends) {
-        props[key] = value.default || extendsType(key);
+      // } else if (value.extends) {
+      //   props[key] = value.default || extendsType(key);
       } else if (typeof value.type === 'object') {
         const isString = Array.isArray(value.type) ? value.type.includes('String') : false;
         props[key] = isString ? '' : null;
       } else {
-        props[key] = null;
+        props[key] = setUnknownType(key);
       }
     }
   }

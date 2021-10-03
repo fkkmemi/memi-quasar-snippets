@@ -2,7 +2,7 @@
 	"name": "memi-quasar-snippets",
 	"displayName": "memi-quasar-snippets",
 	"description": "vscode snippets for quasar",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "fkkmemi",
 	"repository": {
 		"type": "git",
@@ -35,7 +35,8 @@
 		"lint": "eslint .",
 		"pretest": "yarn run lint",
 		"test": "node ./test/runTest.js",
-		"generate": "node ./generate"
+		"generate": "node ./generate",
+		"deploy": "vsce package && vsce publish"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.4",
